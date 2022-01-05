@@ -1,0 +1,1165 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A46A38652785662E000D04C3 /* CronoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38642785662E000D04C3 /* CronoApp.swift */; };
+		A46A38672785662E000D04C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38662785662E000D04C3 /* ContentView.swift */; };
+		A46A386927856630000D04C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A386827856630000D04C3 /* Assets.xcassets */; };
+		A46A386C27856630000D04C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A386B27856630000D04C3 /* Preview Assets.xcassets */; };
+		A46A387627856631000D04C3 /* CronoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A387527856631000D04C3 /* CronoTests.swift */; };
+		A46A388027856631000D04C3 /* CronoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A387F27856631000D04C3 /* CronoUITests.swift */; };
+		A46A388227856631000D04C3 /* CronoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A388127856631000D04C3 /* CronoUITestsLaunchTests.swift */; };
+		A46A388627856631000D04C3 /* Crono WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A46A388527856631000D04C3 /* Crono WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A46A388B27856632000D04C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A388A27856632000D04C3 /* Assets.xcassets */; };
+		A46A389127856632000D04C3 /* Crono WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A46A389027856632000D04C3 /* Crono WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A46A389627856632000D04C3 /* CronoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A389527856632000D04C3 /* CronoApp.swift */; };
+		A46A389827856632000D04C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A389727856632000D04C3 /* ContentView.swift */; };
+		A46A389A27856632000D04C3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A389927856632000D04C3 /* NotificationController.swift */; };
+		A46A389C27856632000D04C3 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A389B27856632000D04C3 /* NotificationView.swift */; };
+		A46A389E27856632000D04C3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A389D27856632000D04C3 /* ComplicationController.swift */; };
+		A46A38A027856634000D04C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A389F27856634000D04C3 /* Assets.xcassets */; };
+		A46A38A327856634000D04C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A38A227856634000D04C3 /* Preview Assets.xcassets */; };
+		A46A38AF27856634000D04C3 /* Crono_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38AE27856634000D04C3 /* Crono_WatchKit_AppTests.swift */; };
+		A46A38B927856634000D04C3 /* Crono_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38B827856634000D04C3 /* Crono_WatchKit_AppUITests.swift */; };
+		A46A38BB27856634000D04C3 /* Crono_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38BA27856634000D04C3 /* Crono_WatchKit_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A46A387227856631000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A38602785662E000D04C3;
+			remoteInfo = Crono;
+		};
+		A46A387C27856631000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A38602785662E000D04C3;
+			remoteInfo = Crono;
+		};
+		A46A388727856631000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A388427856631000D04C3;
+			remoteInfo = "Crono WatchKit App";
+		};
+		A46A389227856632000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A388F27856632000D04C3;
+			remoteInfo = "Crono WatchKit Extension";
+		};
+		A46A38AB27856634000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A388F27856632000D04C3;
+			remoteInfo = "Crono WatchKit Extension";
+		};
+		A46A38B527856634000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A388427856631000D04C3;
+			remoteInfo = "Crono WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A46A38C127856634000D04C3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A46A389127856632000D04C3 /* Crono WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38C527856634000D04C3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A46A388627856631000D04C3 /* Crono WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A46A38612785662E000D04C3 /* Crono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crono.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A38642785662E000D04C3 /* CronoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronoApp.swift; sourceTree = "<group>"; };
+		A46A38662785662E000D04C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A46A386827856630000D04C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A46A386B27856630000D04C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A46A387127856631000D04C3 /* CronoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CronoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A387527856631000D04C3 /* CronoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronoTests.swift; sourceTree = "<group>"; };
+		A46A387B27856631000D04C3 /* CronoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CronoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A387F27856631000D04C3 /* CronoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronoUITests.swift; sourceTree = "<group>"; };
+		A46A388127856631000D04C3 /* CronoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A46A388527856631000D04C3 /* Crono WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crono WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A388A27856632000D04C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A46A389027856632000D04C3 /* Crono WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Crono WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A389527856632000D04C3 /* CronoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronoApp.swift; sourceTree = "<group>"; };
+		A46A389727856632000D04C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A46A389927856632000D04C3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A46A389B27856632000D04C3 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A46A389D27856632000D04C3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A46A389F27856634000D04C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A46A38A227856634000D04C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A46A38A427856634000D04C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A46A38A527856634000D04C3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A46A38AA27856634000D04C3 /* Crono WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crono WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A38AE27856634000D04C3 /* Crono_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crono_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		A46A38B427856634000D04C3 /* Crono WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crono WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A38B827856634000D04C3 /* Crono_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crono_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		A46A38BA27856634000D04C3 /* Crono_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crono_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A46A385E2785662E000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A386E27856631000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A387827856631000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A388D27856632000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38A727856634000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38B127856634000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A46A38582785662E000D04C3 = {
+			isa = PBXGroup;
+			children = (
+				A46A38632785662E000D04C3 /* Crono */,
+				A46A387427856631000D04C3 /* CronoTests */,
+				A46A387E27856631000D04C3 /* CronoUITests */,
+				A46A388927856631000D04C3 /* Crono WatchKit App */,
+				A46A389427856632000D04C3 /* Crono WatchKit Extension */,
+				A46A38AD27856634000D04C3 /* Crono WatchKit AppTests */,
+				A46A38B727856634000D04C3 /* Crono WatchKit AppUITests */,
+				A46A38622785662E000D04C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A46A38622785662E000D04C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A46A38612785662E000D04C3 /* Crono.app */,
+				A46A387127856631000D04C3 /* CronoTests.xctest */,
+				A46A387B27856631000D04C3 /* CronoUITests.xctest */,
+				A46A388527856631000D04C3 /* Crono WatchKit App.app */,
+				A46A389027856632000D04C3 /* Crono WatchKit Extension.appex */,
+				A46A38AA27856634000D04C3 /* Crono WatchKit AppTests.xctest */,
+				A46A38B427856634000D04C3 /* Crono WatchKit AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A46A38632785662E000D04C3 /* Crono */ = {
+			isa = PBXGroup;
+			children = (
+				A46A38642785662E000D04C3 /* CronoApp.swift */,
+				A46A38662785662E000D04C3 /* ContentView.swift */,
+				A46A386827856630000D04C3 /* Assets.xcassets */,
+				A46A386A27856630000D04C3 /* Preview Content */,
+			);
+			path = Crono;
+			sourceTree = "<group>";
+		};
+		A46A386A27856630000D04C3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A46A386B27856630000D04C3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A46A387427856631000D04C3 /* CronoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A46A387527856631000D04C3 /* CronoTests.swift */,
+			);
+			path = CronoTests;
+			sourceTree = "<group>";
+		};
+		A46A387E27856631000D04C3 /* CronoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A46A387F27856631000D04C3 /* CronoUITests.swift */,
+				A46A388127856631000D04C3 /* CronoUITestsLaunchTests.swift */,
+			);
+			path = CronoUITests;
+			sourceTree = "<group>";
+		};
+		A46A388927856631000D04C3 /* Crono WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A46A388A27856632000D04C3 /* Assets.xcassets */,
+			);
+			path = "Crono WatchKit App";
+			sourceTree = "<group>";
+		};
+		A46A389427856632000D04C3 /* Crono WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A46A389527856632000D04C3 /* CronoApp.swift */,
+				A46A389727856632000D04C3 /* ContentView.swift */,
+				A46A389927856632000D04C3 /* NotificationController.swift */,
+				A46A389B27856632000D04C3 /* NotificationView.swift */,
+				A46A389D27856632000D04C3 /* ComplicationController.swift */,
+				A46A389F27856634000D04C3 /* Assets.xcassets */,
+				A46A38A427856634000D04C3 /* Info.plist */,
+				A46A38A527856634000D04C3 /* PushNotificationPayload.apns */,
+				A46A38A127856634000D04C3 /* Preview Content */,
+			);
+			path = "Crono WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A46A38A127856634000D04C3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A46A38A227856634000D04C3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A46A38AD27856634000D04C3 /* Crono WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A46A38AE27856634000D04C3 /* Crono_WatchKit_AppTests.swift */,
+			);
+			path = "Crono WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		A46A38B727856634000D04C3 /* Crono WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A46A38B827856634000D04C3 /* Crono_WatchKit_AppUITests.swift */,
+				A46A38BA27856634000D04C3 /* Crono_WatchKit_AppUITestsLaunchTests.swift */,
+			);
+			path = "Crono WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A46A38602785662E000D04C3 /* Crono */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38C627856634000D04C3 /* Build configuration list for PBXNativeTarget "Crono" */;
+			buildPhases = (
+				A46A385D2785662E000D04C3 /* Sources */,
+				A46A385E2785662E000D04C3 /* Frameworks */,
+				A46A385F2785662E000D04C3 /* Resources */,
+				A46A38C527856634000D04C3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A388827856631000D04C3 /* PBXTargetDependency */,
+			);
+			name = Crono;
+			productName = Crono;
+			productReference = A46A38612785662E000D04C3 /* Crono.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A46A387027856631000D04C3 /* CronoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38C927856634000D04C3 /* Build configuration list for PBXNativeTarget "CronoTests" */;
+			buildPhases = (
+				A46A386D27856631000D04C3 /* Sources */,
+				A46A386E27856631000D04C3 /* Frameworks */,
+				A46A386F27856631000D04C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A387327856631000D04C3 /* PBXTargetDependency */,
+			);
+			name = CronoTests;
+			productName = CronoTests;
+			productReference = A46A387127856631000D04C3 /* CronoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A46A387A27856631000D04C3 /* CronoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38CC27856634000D04C3 /* Build configuration list for PBXNativeTarget "CronoUITests" */;
+			buildPhases = (
+				A46A387727856631000D04C3 /* Sources */,
+				A46A387827856631000D04C3 /* Frameworks */,
+				A46A387927856631000D04C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A387D27856631000D04C3 /* PBXTargetDependency */,
+			);
+			name = CronoUITests;
+			productName = CronoUITests;
+			productReference = A46A387B27856631000D04C3 /* CronoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A46A388427856631000D04C3 /* Crono WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38C227856634000D04C3 /* Build configuration list for PBXNativeTarget "Crono WatchKit App" */;
+			buildPhases = (
+				A46A388327856631000D04C3 /* Resources */,
+				A46A38C127856634000D04C3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A389327856632000D04C3 /* PBXTargetDependency */,
+			);
+			name = "Crono WatchKit App";
+			productName = "Crono WatchKit App";
+			productReference = A46A388527856631000D04C3 /* Crono WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A46A388F27856632000D04C3 /* Crono WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38BE27856634000D04C3 /* Build configuration list for PBXNativeTarget "Crono WatchKit Extension" */;
+			buildPhases = (
+				A46A388C27856632000D04C3 /* Sources */,
+				A46A388D27856632000D04C3 /* Frameworks */,
+				A46A388E27856632000D04C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crono WatchKit Extension";
+			productName = "Crono WatchKit Extension";
+			productReference = A46A389027856632000D04C3 /* Crono WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		A46A38A927856634000D04C3 /* Crono WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38CF27856634000D04C3 /* Build configuration list for PBXNativeTarget "Crono WatchKit AppTests" */;
+			buildPhases = (
+				A46A38A627856634000D04C3 /* Sources */,
+				A46A38A727856634000D04C3 /* Frameworks */,
+				A46A38A827856634000D04C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A38AC27856634000D04C3 /* PBXTargetDependency */,
+			);
+			name = "Crono WatchKit AppTests";
+			productName = "Crono WatchKit AppTests";
+			productReference = A46A38AA27856634000D04C3 /* Crono WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A46A38B327856634000D04C3 /* Crono WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38D227856634000D04C3 /* Build configuration list for PBXNativeTarget "Crono WatchKit AppUITests" */;
+			buildPhases = (
+				A46A38B027856634000D04C3 /* Sources */,
+				A46A38B127856634000D04C3 /* Frameworks */,
+				A46A38B227856634000D04C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A38B627856634000D04C3 /* PBXTargetDependency */,
+			);
+			name = "Crono WatchKit AppUITests";
+			productName = "Crono WatchKit AppUITests";
+			productReference = A46A38B427856634000D04C3 /* Crono WatchKit AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A46A38592785662E000D04C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A46A38602785662E000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A46A387027856631000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A46A38602785662E000D04C3;
+					};
+					A46A387A27856631000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A46A38602785662E000D04C3;
+					};
+					A46A388427856631000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A46A388F27856632000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A46A38A927856634000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A46A388F27856632000D04C3;
+					};
+					A46A38B327856634000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A46A388427856631000D04C3;
+					};
+				};
+			};
+			buildConfigurationList = A46A385C2785662E000D04C3 /* Build configuration list for PBXProject "Crono" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A46A38582785662E000D04C3;
+			productRefGroup = A46A38622785662E000D04C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A46A38602785662E000D04C3 /* Crono */,
+				A46A387027856631000D04C3 /* CronoTests */,
+				A46A387A27856631000D04C3 /* CronoUITests */,
+				A46A388427856631000D04C3 /* Crono WatchKit App */,
+				A46A388F27856632000D04C3 /* Crono WatchKit Extension */,
+				A46A38A927856634000D04C3 /* Crono WatchKit AppTests */,
+				A46A38B327856634000D04C3 /* Crono WatchKit AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A46A385F2785662E000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A386C27856630000D04C3 /* Preview Assets.xcassets in Resources */,
+				A46A386927856630000D04C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A386F27856631000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A387927856631000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A388327856631000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A388B27856632000D04C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A388E27856632000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A38A327856634000D04C3 /* Preview Assets.xcassets in Resources */,
+				A46A38A027856634000D04C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38A827856634000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38B227856634000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A46A385D2785662E000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A38672785662E000D04C3 /* ContentView.swift in Sources */,
+				A46A38652785662E000D04C3 /* CronoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A386D27856631000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A387627856631000D04C3 /* CronoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A387727856631000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A388227856631000D04C3 /* CronoUITestsLaunchTests.swift in Sources */,
+				A46A388027856631000D04C3 /* CronoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A388C27856632000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A389A27856632000D04C3 /* NotificationController.swift in Sources */,
+				A46A389827856632000D04C3 /* ContentView.swift in Sources */,
+				A46A389E27856632000D04C3 /* ComplicationController.swift in Sources */,
+				A46A389627856632000D04C3 /* CronoApp.swift in Sources */,
+				A46A389C27856632000D04C3 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38A627856634000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A38AF27856634000D04C3 /* Crono_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38B027856634000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A38B927856634000D04C3 /* Crono_WatchKit_AppUITests.swift in Sources */,
+				A46A38BB27856634000D04C3 /* Crono_WatchKit_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A46A387327856631000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A38602785662E000D04C3 /* Crono */;
+			targetProxy = A46A387227856631000D04C3 /* PBXContainerItemProxy */;
+		};
+		A46A387D27856631000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A38602785662E000D04C3 /* Crono */;
+			targetProxy = A46A387C27856631000D04C3 /* PBXContainerItemProxy */;
+		};
+		A46A388827856631000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A388427856631000D04C3 /* Crono WatchKit App */;
+			targetProxy = A46A388727856631000D04C3 /* PBXContainerItemProxy */;
+		};
+		A46A389327856632000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A388F27856632000D04C3 /* Crono WatchKit Extension */;
+			targetProxy = A46A389227856632000D04C3 /* PBXContainerItemProxy */;
+		};
+		A46A38AC27856634000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A388F27856632000D04C3 /* Crono WatchKit Extension */;
+			targetProxy = A46A38AB27856634000D04C3 /* PBXContainerItemProxy */;
+		};
+		A46A38B627856634000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A388427856631000D04C3 /* Crono WatchKit App */;
+			targetProxy = A46A38B527856634000D04C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A46A38BC27856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A46A38BD27856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A46A38BF27856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Crono WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Crono WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Crono WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Crono.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		A46A38C027856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Crono WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Crono WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Crono WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Crono.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		A46A38C327856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Crono_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crono WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.iris.Crono;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Crono.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		A46A38C427856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Crono_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crono WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.iris.Crono;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Crono.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		A46A38C727856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Crono/Preview Content\"";
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Crono;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A46A38C827856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Crono/Preview Content\"";
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Crono;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A46A38CA27856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.CronoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crono.app/Crono";
+			};
+			name = Debug;
+		};
+		A46A38CB27856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.CronoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crono.app/Crono";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A46A38CD27856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.CronoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crono;
+			};
+			name = Debug;
+		};
+		A46A38CE27856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.CronoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crono;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A46A38D027856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iris.Crono-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crono WatchKit Extension.appex/Crono WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		A46A38D127856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iris.Crono-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crono WatchKit Extension.appex/Crono WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		A46A38D327856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iris.Crono-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Crono WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		A46A38D427856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iris.Crono-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Crono WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A46A385C2785662E000D04C3 /* Build configuration list for PBXProject "Crono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38BC27856634000D04C3 /* Debug */,
+				A46A38BD27856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38BE27856634000D04C3 /* Build configuration list for PBXNativeTarget "Crono WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38BF27856634000D04C3 /* Debug */,
+				A46A38C027856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38C227856634000D04C3 /* Build configuration list for PBXNativeTarget "Crono WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38C327856634000D04C3 /* Debug */,
+				A46A38C427856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38C627856634000D04C3 /* Build configuration list for PBXNativeTarget "Crono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38C727856634000D04C3 /* Debug */,
+				A46A38C827856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38C927856634000D04C3 /* Build configuration list for PBXNativeTarget "CronoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38CA27856634000D04C3 /* Debug */,
+				A46A38CB27856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38CC27856634000D04C3 /* Build configuration list for PBXNativeTarget "CronoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38CD27856634000D04C3 /* Debug */,
+				A46A38CE27856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38CF27856634000D04C3 /* Build configuration list for PBXNativeTarget "Crono WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38D027856634000D04C3 /* Debug */,
+				A46A38D127856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38D227856634000D04C3 /* Build configuration list for PBXNativeTarget "Crono WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38D327856634000D04C3 /* Debug */,
+				A46A38D427856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A46A38592785662E000D04C3 /* Project object */;
+}
