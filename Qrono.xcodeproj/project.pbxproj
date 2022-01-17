@@ -1,0 +1,1745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A46A38652785662E000D04C3 /* QronoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38642785662E000D04C3 /* QronoApp.swift */; };
+		A46A38672785662E000D04C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38662785662E000D04C3 /* ContentView.swift */; };
+		A46A386927856630000D04C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A386827856630000D04C3 /* Assets.xcassets */; };
+		A46A386C27856630000D04C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A386B27856630000D04C3 /* Preview Assets.xcassets */; };
+		A46A387627856631000D04C3 /* QronoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A387527856631000D04C3 /* QronoTests.swift */; };
+		A46A388027856631000D04C3 /* QronoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A387F27856631000D04C3 /* QronoUITests.swift */; };
+		A46A388227856631000D04C3 /* QronoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A388127856631000D04C3 /* QronoUITestsLaunchTests.swift */; };
+		A46A388627856631000D04C3 /* Qrono WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A46A388527856631000D04C3 /* Qrono WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A46A389127856632000D04C3 /* Qrono WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A46A389027856632000D04C3 /* Qrono WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A46A389627856632000D04C3 /* QronoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A389527856632000D04C3 /* QronoApp.swift */; };
+		A46A389827856632000D04C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A389727856632000D04C3 /* ContentView.swift */; };
+		A46A389A27856632000D04C3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A389927856632000D04C3 /* NotificationController.swift */; };
+		A46A389C27856632000D04C3 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A389B27856632000D04C3 /* NotificationView.swift */; };
+		A46A389E27856632000D04C3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A389D27856632000D04C3 /* ComplicationController.swift */; };
+		A46A38A327856634000D04C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A38A227856634000D04C3 /* Preview Assets.xcassets */; };
+		A46A38AF27856634000D04C3 /* Qrono_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38AE27856634000D04C3 /* Qrono_WatchKit_AppTests.swift */; };
+		A46A38B927856634000D04C3 /* Qrono_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38B827856634000D04C3 /* Qrono_WatchKit_AppUITests.swift */; };
+		A46A38BB27856634000D04C3 /* Qrono_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38BA27856634000D04C3 /* Qrono_WatchKit_AppUITestsLaunchTests.swift */; };
+		A4C1A12027880B0200BE1EA9 /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F12786B7E80062B4CD /* AnalogClockView.swift */; };
+		A4C1A1222788128A00BE1EA9 /* TimeKeeper in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1212788128A00BE1EA9 /* TimeKeeper */; };
+		A4C1A1242788128A00BE1EA9 /* AppBackgroundView in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1232788128A00BE1EA9 /* AppBackgroundView */; };
+		A4C1A1262788128A00BE1EA9 /* StrokedShape in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1252788128A00BE1EA9 /* StrokedShape */; };
+		A4C1A1282788128A00BE1EA9 /* Percent in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1272788128A00BE1EA9 /* Percent */; };
+		A4C1A12A2788128A00BE1EA9 /* RotatableStack in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1292788128A00BE1EA9 /* RotatableStack */; };
+		A4C1A12F2789534C00BE1EA9 /* MajorMonoDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8B9278696400062B4CD /* MajorMonoDisplay-Regular.ttf */; };
+		A4D2F84C27868B280062B4CD /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83027868B280062B4CD /* TimeInterval.swift */; };
+		A4D2F84D27868B280062B4CD /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83027868B280062B4CD /* TimeInterval.swift */; };
+		A4D2F84E27868B280062B4CD /* ClockPrecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83227868B280062B4CD /* ClockPrecision.swift */; };
+		A4D2F84F27868B280062B4CD /* ClockPrecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83227868B280062B4CD /* ClockPrecision.swift */; };
+		A4D2F85027868B280062B4CD /* ClockTimeEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83327868B280062B4CD /* ClockTimeEmitter.swift */; };
+		A4D2F85127868B280062B4CD /* ClockTimeEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83327868B280062B4CD /* ClockTimeEmitter.swift */; };
+		A4D2F85227868B280062B4CD /* ClockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83427868B280062B4CD /* ClockType.swift */; };
+		A4D2F85327868B280062B4CD /* ClockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83427868B280062B4CD /* ClockType.swift */; };
+		A4D2F85427868B280062B4CD /* ClockHandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83527868B280062B4CD /* ClockHandType.swift */; };
+		A4D2F85527868B280062B4CD /* ClockHandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83527868B280062B4CD /* ClockHandType.swift */; };
+		A4D2F85627868B280062B4CD /* ClockHandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83627868B280062B4CD /* ClockHandController.swift */; };
+		A4D2F85727868B280062B4CD /* ClockHandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83627868B280062B4CD /* ClockHandController.swift */; };
+		A4D2F85A27868B280062B4CD /* QronoSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83927868B280062B4CD /* QronoSettings.swift */; };
+		A4D2F85B27868B280062B4CD /* QronoSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83927868B280062B4CD /* QronoSettings.swift */; };
+		A4D2F85C27868B280062B4CD /* defaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83A27868B280062B4CD /* defaultKeys.swift */; };
+		A4D2F85D27868B280062B4CD /* defaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83A27868B280062B4CD /* defaultKeys.swift */; };
+		A4D2F85E27868B280062B4CD /* Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83C27868B280062B4CD /* Ratio.swift */; };
+		A4D2F85F27868B280062B4CD /* Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83C27868B280062B4CD /* Ratio.swift */; };
+		A4D2F86027868B280062B4CD /* limitToRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83D27868B280062B4CD /* limitToRange.swift */; };
+		A4D2F86127868B280062B4CD /* limitToRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83D27868B280062B4CD /* limitToRange.swift */; };
+		A4D2F86227868B280062B4CD /* UIMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83F27868B280062B4CD /* UIMeasurement.swift */; };
+		A4D2F86327868B280062B4CD /* UIMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F83F27868B280062B4CD /* UIMeasurement.swift */; };
+		A4D2F86427868B280062B4CD /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84127868B280062B4CD /* Font.swift */; };
+		A4D2F86527868B280062B4CD /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84127868B280062B4CD /* Font.swift */; };
+		A4D2F86627868B280062B4CD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84227868B280062B4CD /* Color.swift */; };
+		A4D2F86727868B280062B4CD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84227868B280062B4CD /* Color.swift */; };
+		A4D2F86827868B280062B4CD /* QronoTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84427868B280062B4CD /* QronoTheme.swift */; };
+		A4D2F86927868B280062B4CD /* QronoTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84427868B280062B4CD /* QronoTheme.swift */; };
+		A4D2F86A27868B280062B4CD /* ClockShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84527868B280062B4CD /* ClockShape.swift */; };
+		A4D2F86B27868B280062B4CD /* ClockShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84527868B280062B4CD /* ClockShape.swift */; };
+		A4D2F86C27868B280062B4CD /* ClockElementColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84627868B280062B4CD /* ClockElementColor.swift */; };
+		A4D2F86D27868B280062B4CD /* ClockElementColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84627868B280062B4CD /* ClockElementColor.swift */; };
+		A4D2F86E27868B280062B4CD /* ClockFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84727868B280062B4CD /* ClockFont.swift */; };
+		A4D2F86F27868B280062B4CD /* ClockFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84727868B280062B4CD /* ClockFont.swift */; };
+		A4D2F87027868B280062B4CD /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84927868B280062B4CD /* CustomFonts.swift */; };
+		A4D2F87127868B280062B4CD /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84927868B280062B4CD /* CustomFonts.swift */; };
+		A4D2F87227868B280062B4CD /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84A27868B280062B4CD /* Utility.swift */; };
+		A4D2F87327868B280062B4CD /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84A27868B280062B4CD /* Utility.swift */; };
+		A4D2F87427868B280062B4CD /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84B27868B280062B4CD /* types.swift */; };
+		A4D2F87527868B280062B4CD /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F84B27868B280062B4CD /* types.swift */; };
+		A4D2F89F27868B460062B4CD /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F88C27868B460062B4CD /* strings.swift */; };
+		A4D2F8A727868E130062B4CD /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F88C27868B460062B4CD /* strings.swift */; };
+		A4D2F8A827868E550062B4CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8AB27868E550062B4CD /* Localizable.strings */; };
+		A4D2F8A927868E550062B4CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8AB27868E550062B4CD /* Localizable.strings */; };
+		A4D2F8C2278696400062B4CD /* MajorMonoDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8B9278696400062B4CD /* MajorMonoDisplay-Regular.ttf */; };
+		A4D2F8C4278696400062B4CD /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8BB278696400062B4CD /* Montserrat-Medium.ttf */; };
+		A4D2F8C5278696400062B4CD /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8BB278696400062B4CD /* Montserrat-Medium.ttf */; };
+		A4D2F8C6278696400062B4CD /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8BC278696400062B4CD /* Montserrat-Light.ttf */; };
+		A4D2F8C7278696400062B4CD /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8BC278696400062B4CD /* Montserrat-Light.ttf */; };
+		A4D2F8C8278696400062B4CD /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8BD278696400062B4CD /* Montserrat-Thin.ttf */; };
+		A4D2F8C9278696400062B4CD /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8BD278696400062B4CD /* Montserrat-Thin.ttf */; };
+		A4D2F8CA278696400062B4CD /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8BE278696400062B4CD /* Montserrat-Bold.ttf */; };
+		A4D2F8CB278696400062B4CD /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8BE278696400062B4CD /* Montserrat-Bold.ttf */; };
+		A4D2F8CC278696400062B4CD /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8BF278696400062B4CD /* Montserrat-Black.ttf */; };
+		A4D2F8CD278696400062B4CD /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8BF278696400062B4CD /* Montserrat-Black.ttf */; };
+		A4D2F8CE278696400062B4CD /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8C0278696400062B4CD /* Montserrat-Regular.ttf */; };
+		A4D2F8CF278696400062B4CD /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8C0278696400062B4CD /* Montserrat-Regular.ttf */; };
+		A4D2F8D0278696400062B4CD /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8C1278696400062B4CD /* Montserrat-Italic.ttf */; };
+		A4D2F8D1278696400062B4CD /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8C1278696400062B4CD /* Montserrat-Italic.ttf */; };
+		A4D2F8D32786A3300062B4CD /* Qrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8D22786A3300062B4CD /* Qrono.swift */; };
+		A4D2F8D42786A3300062B4CD /* Qrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8D22786A3300062B4CD /* Qrono.swift */; };
+		A4D2F8D52786B1240062B4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A386827856630000D04C3 /* Assets.xcassets */; };
+		A4D2F8D82786B25F0062B4CD /* TimeKeeper in Frameworks */ = {isa = PBXBuildFile; productRef = A4D2F8D72786B25F0062B4CD /* TimeKeeper */; };
+		A4D2F8DB2786B2BD0062B4CD /* AppBackgroundView in Frameworks */ = {isa = PBXBuildFile; productRef = A4D2F8DA2786B2BD0062B4CD /* AppBackgroundView */; };
+		A4D2F8DE2786B33B0062B4CD /* StrokedShape in Frameworks */ = {isa = PBXBuildFile; productRef = A4D2F8DD2786B33B0062B4CD /* StrokedShape */; };
+		A4D2F8E12786B3FD0062B4CD /* Percent in Frameworks */ = {isa = PBXBuildFile; productRef = A4D2F8E02786B3FD0062B4CD /* Percent */; };
+		A4D2F8E42786B4110062B4CD /* RotatableStack in Frameworks */ = {isa = PBXBuildFile; productRef = A4D2F8E32786B4110062B4CD /* RotatableStack */; };
+		A4D2F8F62786B7E80062B4CD /* MainDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E62786B7E80062B4CD /* MainDisplay.swift */; };
+		A4D2F8F82786B7E80062B4CD /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E82786B7E80062B4CD /* DigitalClockView.swift */; };
+		A4D2F8F92786B7E80062B4CD /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E82786B7E80062B4CD /* DigitalClockView.swift */; };
+		A4D2F8FA2786B7E80062B4CD /* DateDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E92786B7E80062B4CD /* DateDisplayView.swift */; };
+		A4D2F8FB2786B7E80062B4CD /* DateDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E92786B7E80062B4CD /* DateDisplayView.swift */; };
+		A4D2F8FC2786B7E80062B4CD /* DigitalClockDateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8EA2786B7E80062B4CD /* DigitalClockDateComponents.swift */; };
+		A4D2F8FD2786B7E80062B4CD /* DigitalClockDateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8EA2786B7E80062B4CD /* DigitalClockDateComponents.swift */; };
+		A4D2F8FE2786B7E80062B4CD /* ClockHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8EC2786B7E80062B4CD /* ClockHands.swift */; };
+		A4D2F8FF2786B7E80062B4CD /* ClockHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8EC2786B7E80062B4CD /* ClockHands.swift */; };
+		A4D2F9002786B7E80062B4CD /* PeriodDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8ED2786B7E80062B4CD /* PeriodDisplayView.swift */; };
+		A4D2F9012786B7E80062B4CD /* PeriodDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8ED2786B7E80062B4CD /* PeriodDisplayView.swift */; };
+		A4D2F9022786B7E80062B4CD /* TickTockDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8EE2786B7E80062B4CD /* TickTockDisplayView.swift */; };
+		A4D2F9032786B7E80062B4CD /* TickTockDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8EE2786B7E80062B4CD /* TickTockDisplayView.swift */; };
+		A4D2F9042786B7E80062B4CD /* ClockTicks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8EF2786B7E80062B4CD /* ClockTicks.swift */; };
+		A4D2F9052786B7E80062B4CD /* ClockTicks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8EF2786B7E80062B4CD /* ClockTicks.swift */; };
+		A4D2F9062786B7E80062B4CD /* ClockNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F02786B7E80062B4CD /* ClockNumbers.swift */; };
+		A4D2F9072786B7E80062B4CD /* ClockNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F02786B7E80062B4CD /* ClockNumbers.swift */; };
+		A4D2F9082786B7E80062B4CD /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F12786B7E80062B4CD /* AnalogClockView.swift */; };
+		A4D2F90A2786B7E80062B4CD /* SettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F32786B7E80062B4CD /* SettingsPanel.swift */; };
+		A4D2F90C2786B7E80062B4CD /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F42786B7E80062B4CD /* SettingsLink.swift */; };
+		A4D2F90E2786B7E80062B4CD /* SectionHeaderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F52786B7E80062B4CD /* SectionHeaderText.swift */; };
+		A4D2F90F2786B7E80062B4CD /* SectionHeaderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F52786B7E80062B4CD /* SectionHeaderText.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A46A387227856631000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A38602785662E000D04C3;
+			remoteInfo = Crono;
+		};
+		A46A387C27856631000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A38602785662E000D04C3;
+			remoteInfo = Crono;
+		};
+		A46A388727856631000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A388427856631000D04C3;
+			remoteInfo = "Crono WatchKit App";
+		};
+		A46A389227856632000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A388F27856632000D04C3;
+			remoteInfo = "Crono WatchKit Extension";
+		};
+		A46A38AB27856634000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A388F27856632000D04C3;
+			remoteInfo = "Crono WatchKit Extension";
+		};
+		A46A38B527856634000D04C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46A38592785662E000D04C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46A388427856631000D04C3;
+			remoteInfo = "Crono WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A46A38C127856634000D04C3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A46A389127856632000D04C3 /* Qrono WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38C527856634000D04C3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A46A388627856631000D04C3 /* Qrono WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A46A38612785662E000D04C3 /* Qrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A38642785662E000D04C3 /* QronoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QronoApp.swift; sourceTree = "<group>"; };
+		A46A38662785662E000D04C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A46A386827856630000D04C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A46A386B27856630000D04C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A46A387127856631000D04C3 /* QronoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QronoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A387527856631000D04C3 /* QronoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QronoTests.swift; sourceTree = "<group>"; };
+		A46A387B27856631000D04C3 /* QronoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QronoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A387F27856631000D04C3 /* QronoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QronoUITests.swift; sourceTree = "<group>"; };
+		A46A388127856631000D04C3 /* QronoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QronoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A46A388527856631000D04C3 /* Qrono WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qrono WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A389027856632000D04C3 /* Qrono WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Qrono WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A389527856632000D04C3 /* QronoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QronoApp.swift; sourceTree = "<group>"; };
+		A46A389727856632000D04C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A46A389927856632000D04C3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A46A389B27856632000D04C3 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A46A389D27856632000D04C3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A46A38A227856634000D04C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A46A38A527856634000D04C3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A46A38AA27856634000D04C3 /* Qrono WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qrono WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A38AE27856634000D04C3 /* Qrono_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qrono_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		A46A38B427856634000D04C3 /* Qrono WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qrono WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46A38B827856634000D04C3 /* Qrono_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qrono_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		A46A38BA27856634000D04C3 /* Qrono_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qrono_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4C1A12C27893C0F00BE1EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C1A1312789663700BE1EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A4C1A13227896A8500BE1EA9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A4D2F83027868B280062B4CD /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		A4D2F83227868B280062B4CD /* ClockPrecision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockPrecision.swift; sourceTree = "<group>"; };
+		A4D2F83327868B280062B4CD /* ClockTimeEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockTimeEmitter.swift; sourceTree = "<group>"; };
+		A4D2F83427868B280062B4CD /* ClockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockType.swift; sourceTree = "<group>"; };
+		A4D2F83527868B280062B4CD /* ClockHandType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockHandType.swift; sourceTree = "<group>"; };
+		A4D2F83627868B280062B4CD /* ClockHandController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockHandController.swift; sourceTree = "<group>"; };
+		A4D2F83927868B280062B4CD /* QronoSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QronoSettings.swift; sourceTree = "<group>"; };
+		A4D2F83A27868B280062B4CD /* defaultKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = defaultKeys.swift; sourceTree = "<group>"; };
+		A4D2F83C27868B280062B4CD /* Ratio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ratio.swift; sourceTree = "<group>"; };
+		A4D2F83D27868B280062B4CD /* limitToRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = limitToRange.swift; sourceTree = "<group>"; };
+		A4D2F83F27868B280062B4CD /* UIMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMeasurement.swift; sourceTree = "<group>"; };
+		A4D2F84127868B280062B4CD /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		A4D2F84227868B280062B4CD /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A4D2F84427868B280062B4CD /* QronoTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QronoTheme.swift; sourceTree = "<group>"; };
+		A4D2F84527868B280062B4CD /* ClockShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockShape.swift; sourceTree = "<group>"; };
+		A4D2F84627868B280062B4CD /* ClockElementColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockElementColor.swift; sourceTree = "<group>"; };
+		A4D2F84727868B280062B4CD /* ClockFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockFont.swift; sourceTree = "<group>"; };
+		A4D2F84927868B280062B4CD /* CustomFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		A4D2F84A27868B280062B4CD /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		A4D2F84B27868B280062B4CD /* types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = types.swift; sourceTree = "<group>"; };
+		A4D2F88C27868B460062B4CD /* strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = strings.swift; sourceTree = "<group>"; };
+		A4D2F8AC27868E580062B4CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4D2F8B027868E940062B4CD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4D2F8B127868E9E0062B4CD /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4D2F8B227868EA00062B4CD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A4D2F8B9278696400062B4CD /* MajorMonoDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MajorMonoDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		A4D2F8BB278696400062B4CD /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		A4D2F8BC278696400062B4CD /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		A4D2F8BD278696400062B4CD /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		A4D2F8BE278696400062B4CD /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		A4D2F8BF278696400062B4CD /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		A4D2F8C0278696400062B4CD /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		A4D2F8C1278696400062B4CD /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		A4D2F8D22786A3300062B4CD /* Qrono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qrono.swift; sourceTree = "<group>"; };
+		A4D2F8E62786B7E80062B4CD /* MainDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDisplay.swift; sourceTree = "<group>"; };
+		A4D2F8E82786B7E80062B4CD /* DigitalClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitalClockView.swift; sourceTree = "<group>"; };
+		A4D2F8E92786B7E80062B4CD /* DateDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateDisplayView.swift; sourceTree = "<group>"; };
+		A4D2F8EA2786B7E80062B4CD /* DigitalClockDateComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitalClockDateComponents.swift; sourceTree = "<group>"; };
+		A4D2F8EC2786B7E80062B4CD /* ClockHands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockHands.swift; sourceTree = "<group>"; };
+		A4D2F8ED2786B7E80062B4CD /* PeriodDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodDisplayView.swift; sourceTree = "<group>"; };
+		A4D2F8EE2786B7E80062B4CD /* TickTockDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickTockDisplayView.swift; sourceTree = "<group>"; };
+		A4D2F8EF2786B7E80062B4CD /* ClockTicks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockTicks.swift; sourceTree = "<group>"; };
+		A4D2F8F02786B7E80062B4CD /* ClockNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockNumbers.swift; sourceTree = "<group>"; };
+		A4D2F8F12786B7E80062B4CD /* AnalogClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalogClockView.swift; sourceTree = "<group>"; };
+		A4D2F8F32786B7E80062B4CD /* SettingsPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPanel.swift; sourceTree = "<group>"; };
+		A4D2F8F42786B7E80062B4CD /* SettingsLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
+		A4D2F8F52786B7E80062B4CD /* SectionHeaderText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderText.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A46A385E2785662E000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D2F8E12786B3FD0062B4CD /* Percent in Frameworks */,
+				A4D2F8E42786B4110062B4CD /* RotatableStack in Frameworks */,
+				A4D2F8D82786B25F0062B4CD /* TimeKeeper in Frameworks */,
+				A4D2F8DE2786B33B0062B4CD /* StrokedShape in Frameworks */,
+				A4D2F8DB2786B2BD0062B4CD /* AppBackgroundView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A386E27856631000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A387827856631000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A388D27856632000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C1A1282788128A00BE1EA9 /* Percent in Frameworks */,
+				A4C1A12A2788128A00BE1EA9 /* RotatableStack in Frameworks */,
+				A4C1A1222788128A00BE1EA9 /* TimeKeeper in Frameworks */,
+				A4C1A1262788128A00BE1EA9 /* StrokedShape in Frameworks */,
+				A4C1A1242788128A00BE1EA9 /* AppBackgroundView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38A727856634000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38B127856634000D04C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A46A38582785662E000D04C3 = {
+			isa = PBXGroup;
+			children = (
+				A4C1A13227896A8500BE1EA9 /* README.md */,
+				A4D2F8E52786B7AB0062B4CD /* QronoUILibrary */,
+				A4D2F82E278689910062B4CD /* QronoLibrary */,
+				A46A38632785662E000D04C3 /* Qrono */,
+				A46A387427856631000D04C3 /* QronoTests */,
+				A46A387E27856631000D04C3 /* QronoUITests */,
+				A46A388927856631000D04C3 /* Qrono WatchKit App */,
+				A46A389427856632000D04C3 /* Qrono WatchKit Extension */,
+				A46A38AD27856634000D04C3 /* Qrono WatchKit AppTests */,
+				A46A38B727856634000D04C3 /* Qrono WatchKit AppUITests */,
+				A46A38622785662E000D04C3 /* Products */,
+				A4C1A11B2787ED2B00BE1EA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A46A38622785662E000D04C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A46A38612785662E000D04C3 /* Qrono.app */,
+				A46A387127856631000D04C3 /* QronoTests.xctest */,
+				A46A387B27856631000D04C3 /* QronoUITests.xctest */,
+				A46A388527856631000D04C3 /* Qrono WatchKit App.app */,
+				A46A389027856632000D04C3 /* Qrono WatchKit Extension.appex */,
+				A46A38AA27856634000D04C3 /* Qrono WatchKit AppTests.xctest */,
+				A46A38B427856634000D04C3 /* Qrono WatchKit AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A46A38632785662E000D04C3 /* Qrono */ = {
+			isa = PBXGroup;
+			children = (
+				A4C1A1312789663700BE1EA9 /* Info.plist */,
+				A46A38642785662E000D04C3 /* QronoApp.swift */,
+				A46A38662785662E000D04C3 /* ContentView.swift */,
+				A46A386A27856630000D04C3 /* Preview Content */,
+			);
+			path = Qrono;
+			sourceTree = "<group>";
+		};
+		A46A386A27856630000D04C3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A46A386B27856630000D04C3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A46A387427856631000D04C3 /* QronoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A46A387527856631000D04C3 /* QronoTests.swift */,
+			);
+			path = QronoTests;
+			sourceTree = "<group>";
+		};
+		A46A387E27856631000D04C3 /* QronoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A46A387F27856631000D04C3 /* QronoUITests.swift */,
+				A46A388127856631000D04C3 /* QronoUITestsLaunchTests.swift */,
+			);
+			path = QronoUITests;
+			sourceTree = "<group>";
+		};
+		A46A388927856631000D04C3 /* Qrono WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Qrono WatchKit App";
+			sourceTree = "<group>";
+		};
+		A46A389427856632000D04C3 /* Qrono WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A46A389527856632000D04C3 /* QronoApp.swift */,
+				A46A389727856632000D04C3 /* ContentView.swift */,
+				A46A389927856632000D04C3 /* NotificationController.swift */,
+				A46A389B27856632000D04C3 /* NotificationView.swift */,
+				A46A389D27856632000D04C3 /* ComplicationController.swift */,
+				A46A38A527856634000D04C3 /* PushNotificationPayload.apns */,
+				A46A38A127856634000D04C3 /* Preview Content */,
+				A4C1A12C27893C0F00BE1EA9 /* Info.plist */,
+			);
+			path = "Qrono WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A46A38A127856634000D04C3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A46A38A227856634000D04C3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A46A38AD27856634000D04C3 /* Qrono WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A46A38AE27856634000D04C3 /* Qrono_WatchKit_AppTests.swift */,
+			);
+			path = "Qrono WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		A46A38B727856634000D04C3 /* Qrono WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A46A38B827856634000D04C3 /* Qrono_WatchKit_AppUITests.swift */,
+				A46A38BA27856634000D04C3 /* Qrono_WatchKit_AppUITestsLaunchTests.swift */,
+			);
+			path = "Qrono WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+		A4C1A11B2787ED2B00BE1EA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4D2F82E278689910062B4CD /* QronoLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F83727868B280062B4CD /* App */,
+				A4D2F83127868B280062B4CD /* Clock */,
+				A4D2F82F27868B280062B4CD /* Extensions */,
+				A4D2F83E27868B280062B4CD /* UI */,
+				A4D2F83B27868B280062B4CD /* Utilities */,
+				A46A386827856630000D04C3 /* Assets.xcassets */,
+				A4D2F8B7278696400062B4CD /* Fonts */,
+				A4D2F8AB27868E550062B4CD /* Localizable.strings */,
+				A4D2F88C27868B460062B4CD /* strings.swift */,
+			);
+			path = QronoLibrary;
+			sourceTree = "<group>";
+		};
+		A4D2F82F27868B280062B4CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F83027868B280062B4CD /* TimeInterval.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A4D2F83127868B280062B4CD /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F83227868B280062B4CD /* ClockPrecision.swift */,
+				A4D2F83327868B280062B4CD /* ClockTimeEmitter.swift */,
+				A4D2F83427868B280062B4CD /* ClockType.swift */,
+				A4D2F83527868B280062B4CD /* ClockHandType.swift */,
+				A4D2F83627868B280062B4CD /* ClockHandController.swift */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		A4D2F83727868B280062B4CD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F8D22786A3300062B4CD /* Qrono.swift */,
+				A4D2F83927868B280062B4CD /* QronoSettings.swift */,
+				A4D2F83A27868B280062B4CD /* defaultKeys.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A4D2F83B27868B280062B4CD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F83C27868B280062B4CD /* Ratio.swift */,
+				A4D2F83D27868B280062B4CD /* limitToRange.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A4D2F83E27868B280062B4CD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F83F27868B280062B4CD /* UIMeasurement.swift */,
+				A4D2F84027868B280062B4CD /* Extensions */,
+				A4D2F84327868B280062B4CD /* Theme */,
+				A4D2F84827868B280062B4CD /* Fonts */,
+				A4D2F84B27868B280062B4CD /* types.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A4D2F84027868B280062B4CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F84127868B280062B4CD /* Font.swift */,
+				A4D2F84227868B280062B4CD /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A4D2F84327868B280062B4CD /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F84427868B280062B4CD /* QronoTheme.swift */,
+				A4D2F84527868B280062B4CD /* ClockShape.swift */,
+				A4D2F84627868B280062B4CD /* ClockElementColor.swift */,
+				A4D2F84727868B280062B4CD /* ClockFont.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A4D2F84827868B280062B4CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F84927868B280062B4CD /* CustomFonts.swift */,
+				A4D2F84A27868B280062B4CD /* Utility.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A4D2F8B7278696400062B4CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F8B8278696400062B4CD /* MajorMonoDisplay */,
+				A4D2F8BA278696400062B4CD /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A4D2F8B8278696400062B4CD /* MajorMonoDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F8B9278696400062B4CD /* MajorMonoDisplay-Regular.ttf */,
+			);
+			path = MajorMonoDisplay;
+			sourceTree = "<group>";
+		};
+		A4D2F8BA278696400062B4CD /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F8BB278696400062B4CD /* Montserrat-Medium.ttf */,
+				A4D2F8BC278696400062B4CD /* Montserrat-Light.ttf */,
+				A4D2F8BD278696400062B4CD /* Montserrat-Thin.ttf */,
+				A4D2F8BE278696400062B4CD /* Montserrat-Bold.ttf */,
+				A4D2F8BF278696400062B4CD /* Montserrat-Black.ttf */,
+				A4D2F8C0278696400062B4CD /* Montserrat-Regular.ttf */,
+				A4D2F8C1278696400062B4CD /* Montserrat-Italic.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		A4D2F8E52786B7AB0062B4CD /* QronoUILibrary */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F8EB2786B7E80062B4CD /* AnalogClock */,
+				A4D2F8E72786B7E80062B4CD /* DigitalClock and Date */,
+				A4D2F8E62786B7E80062B4CD /* MainDisplay.swift */,
+				A4D2F8F22786B7E80062B4CD /* Settings */,
+			);
+			path = QronoUILibrary;
+			sourceTree = "<group>";
+		};
+		A4D2F8E72786B7E80062B4CD /* DigitalClock and Date */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F8E82786B7E80062B4CD /* DigitalClockView.swift */,
+				A4D2F8E92786B7E80062B4CD /* DateDisplayView.swift */,
+				A4D2F8EA2786B7E80062B4CD /* DigitalClockDateComponents.swift */,
+			);
+			path = "DigitalClock and Date";
+			sourceTree = "<group>";
+		};
+		A4D2F8EB2786B7E80062B4CD /* AnalogClock */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F8EC2786B7E80062B4CD /* ClockHands.swift */,
+				A4D2F8ED2786B7E80062B4CD /* PeriodDisplayView.swift */,
+				A4D2F8EE2786B7E80062B4CD /* TickTockDisplayView.swift */,
+				A4D2F8EF2786B7E80062B4CD /* ClockTicks.swift */,
+				A4D2F8F02786B7E80062B4CD /* ClockNumbers.swift */,
+				A4D2F8F12786B7E80062B4CD /* AnalogClockView.swift */,
+			);
+			path = AnalogClock;
+			sourceTree = "<group>";
+		};
+		A4D2F8F22786B7E80062B4CD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F8F32786B7E80062B4CD /* SettingsPanel.swift */,
+				A4D2F8F42786B7E80062B4CD /* SettingsLink.swift */,
+				A4D2F8F52786B7E80062B4CD /* SectionHeaderText.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A46A38602785662E000D04C3 /* Qrono */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38C627856634000D04C3 /* Build configuration list for PBXNativeTarget "Qrono" */;
+			buildPhases = (
+				A4D2F8B3278694270062B4CD /* ShellScript */,
+				A46A385D2785662E000D04C3 /* Sources */,
+				A46A385E2785662E000D04C3 /* Frameworks */,
+				A46A385F2785662E000D04C3 /* Resources */,
+				A46A38C527856634000D04C3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A388827856631000D04C3 /* PBXTargetDependency */,
+			);
+			name = Qrono;
+			packageProductDependencies = (
+				A4D2F8D72786B25F0062B4CD /* TimeKeeper */,
+				A4D2F8DA2786B2BD0062B4CD /* AppBackgroundView */,
+				A4D2F8DD2786B33B0062B4CD /* StrokedShape */,
+				A4D2F8E02786B3FD0062B4CD /* Percent */,
+				A4D2F8E32786B4110062B4CD /* RotatableStack */,
+			);
+			productName = Crono;
+			productReference = A46A38612785662E000D04C3 /* Qrono.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A46A387027856631000D04C3 /* QronoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38C927856634000D04C3 /* Build configuration list for PBXNativeTarget "QronoTests" */;
+			buildPhases = (
+				A46A386D27856631000D04C3 /* Sources */,
+				A46A386E27856631000D04C3 /* Frameworks */,
+				A46A386F27856631000D04C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A387327856631000D04C3 /* PBXTargetDependency */,
+			);
+			name = QronoTests;
+			productName = CronoTests;
+			productReference = A46A387127856631000D04C3 /* QronoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A46A387A27856631000D04C3 /* QronoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38CC27856634000D04C3 /* Build configuration list for PBXNativeTarget "QronoUITests" */;
+			buildPhases = (
+				A46A387727856631000D04C3 /* Sources */,
+				A46A387827856631000D04C3 /* Frameworks */,
+				A46A387927856631000D04C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A387D27856631000D04C3 /* PBXTargetDependency */,
+			);
+			name = QronoUITests;
+			productName = CronoUITests;
+			productReference = A46A387B27856631000D04C3 /* QronoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A46A388427856631000D04C3 /* Qrono WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38C227856634000D04C3 /* Build configuration list for PBXNativeTarget "Qrono WatchKit App" */;
+			buildPhases = (
+				A46A388327856631000D04C3 /* Resources */,
+				A46A38C127856634000D04C3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A389327856632000D04C3 /* PBXTargetDependency */,
+			);
+			name = "Qrono WatchKit App";
+			productName = "Crono WatchKit App";
+			productReference = A46A388527856631000D04C3 /* Qrono WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A46A388F27856632000D04C3 /* Qrono WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38BE27856634000D04C3 /* Build configuration list for PBXNativeTarget "Qrono WatchKit Extension" */;
+			buildPhases = (
+				A46A388C27856632000D04C3 /* Sources */,
+				A46A388D27856632000D04C3 /* Frameworks */,
+				A46A388E27856632000D04C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Qrono WatchKit Extension";
+			packageProductDependencies = (
+				A4C1A1212788128A00BE1EA9 /* TimeKeeper */,
+				A4C1A1232788128A00BE1EA9 /* AppBackgroundView */,
+				A4C1A1252788128A00BE1EA9 /* StrokedShape */,
+				A4C1A1272788128A00BE1EA9 /* Percent */,
+				A4C1A1292788128A00BE1EA9 /* RotatableStack */,
+			);
+			productName = "Crono WatchKit Extension";
+			productReference = A46A389027856632000D04C3 /* Qrono WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		A46A38A927856634000D04C3 /* Qrono WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38CF27856634000D04C3 /* Build configuration list for PBXNativeTarget "Qrono WatchKit AppTests" */;
+			buildPhases = (
+				A46A38A627856634000D04C3 /* Sources */,
+				A46A38A727856634000D04C3 /* Frameworks */,
+				A46A38A827856634000D04C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A38AC27856634000D04C3 /* PBXTargetDependency */,
+			);
+			name = "Qrono WatchKit AppTests";
+			productName = "Crono WatchKit AppTests";
+			productReference = A46A38AA27856634000D04C3 /* Qrono WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A46A38B327856634000D04C3 /* Qrono WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46A38D227856634000D04C3 /* Build configuration list for PBXNativeTarget "Qrono WatchKit AppUITests" */;
+			buildPhases = (
+				A46A38B027856634000D04C3 /* Sources */,
+				A46A38B127856634000D04C3 /* Frameworks */,
+				A46A38B227856634000D04C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46A38B627856634000D04C3 /* PBXTargetDependency */,
+			);
+			name = "Qrono WatchKit AppUITests";
+			productName = "Crono WatchKit AppUITests";
+			productReference = A46A38B427856634000D04C3 /* Qrono WatchKit AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A46A38592785662E000D04C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A46A38602785662E000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A46A387027856631000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A46A38602785662E000D04C3;
+					};
+					A46A387A27856631000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A46A38602785662E000D04C3;
+					};
+					A46A388427856631000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A46A388F27856632000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A46A38A927856634000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A46A388F27856632000D04C3;
+					};
+					A46A38B327856634000D04C3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A46A388427856631000D04C3;
+					};
+				};
+			};
+			buildConfigurationList = A46A385C2785662E000D04C3 /* Build configuration list for PBXProject "Qrono" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+				"pt-BR",
+				es,
+			);
+			mainGroup = A46A38582785662E000D04C3;
+			packageReferences = (
+				A4D2F8D62786B25F0062B4CD /* XCRemoteSwiftPackageReference "TimeKeeper" */,
+				A4D2F8D92786B2BD0062B4CD /* XCRemoteSwiftPackageReference "AppBackgroundView" */,
+				A4D2F8DC2786B33B0062B4CD /* XCRemoteSwiftPackageReference "StrokedShape" */,
+				A4D2F8DF2786B3FD0062B4CD /* XCRemoteSwiftPackageReference "Percent" */,
+				A4D2F8E22786B4110062B4CD /* XCRemoteSwiftPackageReference "RotatableStack" */,
+			);
+			productRefGroup = A46A38622785662E000D04C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A46A38602785662E000D04C3 /* Qrono */,
+				A46A387027856631000D04C3 /* QronoTests */,
+				A46A387A27856631000D04C3 /* QronoUITests */,
+				A46A388427856631000D04C3 /* Qrono WatchKit App */,
+				A46A388F27856632000D04C3 /* Qrono WatchKit Extension */,
+				A46A38A927856634000D04C3 /* Qrono WatchKit AppTests */,
+				A46A38B327856634000D04C3 /* Qrono WatchKit AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A46A385F2785662E000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D2F8CE278696400062B4CD /* Montserrat-Regular.ttf in Resources */,
+				A4D2F8CA278696400062B4CD /* Montserrat-Bold.ttf in Resources */,
+				A46A386C27856630000D04C3 /* Preview Assets.xcassets in Resources */,
+				A4D2F8C8278696400062B4CD /* Montserrat-Thin.ttf in Resources */,
+				A4D2F8A827868E550062B4CD /* Localizable.strings in Resources */,
+				A4D2F8C4278696400062B4CD /* Montserrat-Medium.ttf in Resources */,
+				A4D2F8C6278696400062B4CD /* Montserrat-Light.ttf in Resources */,
+				A4D2F8CC278696400062B4CD /* Montserrat-Black.ttf in Resources */,
+				A46A386927856630000D04C3 /* Assets.xcassets in Resources */,
+				A4D2F8D0278696400062B4CD /* Montserrat-Italic.ttf in Resources */,
+				A4D2F8C2278696400062B4CD /* MajorMonoDisplay-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A386F27856631000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A387927856631000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A388327856631000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A388E27856632000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D2F8CF278696400062B4CD /* Montserrat-Regular.ttf in Resources */,
+				A4D2F8CB278696400062B4CD /* Montserrat-Bold.ttf in Resources */,
+				A46A38A327856634000D04C3 /* Preview Assets.xcassets in Resources */,
+				A4D2F8C9278696400062B4CD /* Montserrat-Thin.ttf in Resources */,
+				A4D2F8D52786B1240062B4CD /* Assets.xcassets in Resources */,
+				A4D2F8A927868E550062B4CD /* Localizable.strings in Resources */,
+				A4D2F8C5278696400062B4CD /* Montserrat-Medium.ttf in Resources */,
+				A4D2F8C7278696400062B4CD /* Montserrat-Light.ttf in Resources */,
+				A4D2F8CD278696400062B4CD /* Montserrat-Black.ttf in Resources */,
+				A4C1A12F2789534C00BE1EA9 /* MajorMonoDisplay-Regular.ttf in Resources */,
+				A4D2F8D1278696400062B4CD /* Montserrat-Italic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38A827856634000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38B227856634000D04C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4D2F8B3278694270062B4CD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  echo \"swiftlint\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A46A385D2785662E000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A38672785662E000D04C3 /* ContentView.swift in Sources */,
+				A4D2F9022786B7E80062B4CD /* TickTockDisplayView.swift in Sources */,
+				A4D2F86027868B280062B4CD /* limitToRange.swift in Sources */,
+				A4D2F9082786B7E80062B4CD /* AnalogClockView.swift in Sources */,
+				A4D2F89F27868B460062B4CD /* strings.swift in Sources */,
+				A4D2F8F62786B7E80062B4CD /* MainDisplay.swift in Sources */,
+				A4D2F9062786B7E80062B4CD /* ClockNumbers.swift in Sources */,
+				A4D2F86427868B280062B4CD /* Font.swift in Sources */,
+				A4D2F86227868B280062B4CD /* UIMeasurement.swift in Sources */,
+				A4D2F85E27868B280062B4CD /* Ratio.swift in Sources */,
+				A4D2F8FE2786B7E80062B4CD /* ClockHands.swift in Sources */,
+				A4D2F90A2786B7E80062B4CD /* SettingsPanel.swift in Sources */,
+				A4D2F86827868B280062B4CD /* QronoTheme.swift in Sources */,
+				A4D2F86627868B280062B4CD /* Color.swift in Sources */,
+				A4D2F85027868B280062B4CD /* ClockTimeEmitter.swift in Sources */,
+				A4D2F90C2786B7E80062B4CD /* SettingsLink.swift in Sources */,
+				A4D2F85427868B280062B4CD /* ClockHandType.swift in Sources */,
+				A4D2F9042786B7E80062B4CD /* ClockTicks.swift in Sources */,
+				A4D2F87027868B280062B4CD /* CustomFonts.swift in Sources */,
+				A4D2F87427868B280062B4CD /* types.swift in Sources */,
+				A4D2F86E27868B280062B4CD /* ClockFont.swift in Sources */,
+				A4D2F8D32786A3300062B4CD /* Qrono.swift in Sources */,
+				A4D2F8FA2786B7E80062B4CD /* DateDisplayView.swift in Sources */,
+				A4D2F85227868B280062B4CD /* ClockType.swift in Sources */,
+				A4D2F8F82786B7E80062B4CD /* DigitalClockView.swift in Sources */,
+				A4D2F84C27868B280062B4CD /* TimeInterval.swift in Sources */,
+				A4D2F85C27868B280062B4CD /* defaultKeys.swift in Sources */,
+				A4D2F87227868B280062B4CD /* Utility.swift in Sources */,
+				A4D2F86A27868B280062B4CD /* ClockShape.swift in Sources */,
+				A46A38652785662E000D04C3 /* QronoApp.swift in Sources */,
+				A4D2F90E2786B7E80062B4CD /* SectionHeaderText.swift in Sources */,
+				A4D2F8FC2786B7E80062B4CD /* DigitalClockDateComponents.swift in Sources */,
+				A4D2F84E27868B280062B4CD /* ClockPrecision.swift in Sources */,
+				A4D2F86C27868B280062B4CD /* ClockElementColor.swift in Sources */,
+				A4D2F9002786B7E80062B4CD /* PeriodDisplayView.swift in Sources */,
+				A4D2F85A27868B280062B4CD /* QronoSettings.swift in Sources */,
+				A4D2F85627868B280062B4CD /* ClockHandController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A386D27856631000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A387627856631000D04C3 /* QronoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A387727856631000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A388227856631000D04C3 /* QronoUITestsLaunchTests.swift in Sources */,
+				A46A388027856631000D04C3 /* QronoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A388C27856632000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D2F85B27868B280062B4CD /* QronoSettings.swift in Sources */,
+				A46A389A27856632000D04C3 /* NotificationController.swift in Sources */,
+				A4D2F9032786B7E80062B4CD /* TickTockDisplayView.swift in Sources */,
+				A4D2F85527868B280062B4CD /* ClockHandType.swift in Sources */,
+				A4D2F8FB2786B7E80062B4CD /* DateDisplayView.swift in Sources */,
+				A4D2F85D27868B280062B4CD /* defaultKeys.swift in Sources */,
+				A4D2F84D27868B280062B4CD /* TimeInterval.swift in Sources */,
+				A4D2F8FF2786B7E80062B4CD /* ClockHands.swift in Sources */,
+				A4D2F8A727868E130062B4CD /* strings.swift in Sources */,
+				A4D2F86D27868B280062B4CD /* ClockElementColor.swift in Sources */,
+				A4D2F90F2786B7E80062B4CD /* SectionHeaderText.swift in Sources */,
+				A4D2F9072786B7E80062B4CD /* ClockNumbers.swift in Sources */,
+				A4D2F9012786B7E80062B4CD /* PeriodDisplayView.swift in Sources */,
+				A4D2F86327868B280062B4CD /* UIMeasurement.swift in Sources */,
+				A4D2F9052786B7E80062B4CD /* ClockTicks.swift in Sources */,
+				A4D2F85727868B280062B4CD /* ClockHandController.swift in Sources */,
+				A46A389827856632000D04C3 /* ContentView.swift in Sources */,
+				A4D2F87127868B280062B4CD /* CustomFonts.swift in Sources */,
+				A4D2F87327868B280062B4CD /* Utility.swift in Sources */,
+				A4D2F85F27868B280062B4CD /* Ratio.swift in Sources */,
+				A4D2F86B27868B280062B4CD /* ClockShape.swift in Sources */,
+				A46A389E27856632000D04C3 /* ComplicationController.swift in Sources */,
+				A4D2F8FD2786B7E80062B4CD /* DigitalClockDateComponents.swift in Sources */,
+				A4D2F86727868B280062B4CD /* Color.swift in Sources */,
+				A4D2F84F27868B280062B4CD /* ClockPrecision.swift in Sources */,
+				A46A389627856632000D04C3 /* QronoApp.swift in Sources */,
+				A4C1A12027880B0200BE1EA9 /* AnalogClockView.swift in Sources */,
+				A4D2F86127868B280062B4CD /* limitToRange.swift in Sources */,
+				A4D2F87527868B280062B4CD /* types.swift in Sources */,
+				A4D2F8F92786B7E80062B4CD /* DigitalClockView.swift in Sources */,
+				A4D2F86527868B280062B4CD /* Font.swift in Sources */,
+				A4D2F85127868B280062B4CD /* ClockTimeEmitter.swift in Sources */,
+				A46A389C27856632000D04C3 /* NotificationView.swift in Sources */,
+				A4D2F86927868B280062B4CD /* QronoTheme.swift in Sources */,
+				A4D2F86F27868B280062B4CD /* ClockFont.swift in Sources */,
+				A4D2F85327868B280062B4CD /* ClockType.swift in Sources */,
+				A4D2F8D42786A3300062B4CD /* Qrono.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38A627856634000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A38AF27856634000D04C3 /* Qrono_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46A38B027856634000D04C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46A38B927856634000D04C3 /* Qrono_WatchKit_AppUITests.swift in Sources */,
+				A46A38BB27856634000D04C3 /* Qrono_WatchKit_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A46A387327856631000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A38602785662E000D04C3 /* Qrono */;
+			targetProxy = A46A387227856631000D04C3 /* PBXContainerItemProxy */;
+		};
+		A46A387D27856631000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A38602785662E000D04C3 /* Qrono */;
+			targetProxy = A46A387C27856631000D04C3 /* PBXContainerItemProxy */;
+		};
+		A46A388827856631000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A388427856631000D04C3 /* Qrono WatchKit App */;
+			targetProxy = A46A388727856631000D04C3 /* PBXContainerItemProxy */;
+		};
+		A46A389327856632000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A388F27856632000D04C3 /* Qrono WatchKit Extension */;
+			targetProxy = A46A389227856632000D04C3 /* PBXContainerItemProxy */;
+		};
+		A46A38AC27856634000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A388F27856632000D04C3 /* Qrono WatchKit Extension */;
+			targetProxy = A46A38AB27856634000D04C3 /* PBXContainerItemProxy */;
+		};
+		A46A38B627856634000D04C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46A388427856631000D04C3 /* Qrono WatchKit App */;
+			targetProxy = A46A38B527856634000D04C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4D2F8AB27868E550062B4CD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4D2F8AC27868E580062B4CD /* en */,
+				A4D2F8B027868E940062B4CD /* es */,
+				A4D2F8B127868E9E0062B4CD /* vi */,
+				A4D2F8B227868EA00062B4CD /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A46A38BC27856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A46A38BD27856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A46A38BF27856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Qrono WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Qrono WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Qrono WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Qrono_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Qrono.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		A46A38C027856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Qrono WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Qrono WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Qrono WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Qrono_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Qrono.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		A46A38C327856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Qrono_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Qrono WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.iris.Qrono;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Qrono.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		A46A38C427856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Qrono_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Qrono WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.iris.Qrono;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Qrono.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		A46A38C727856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Qrono/Preview Content\"";
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Qrono/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Qrono;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A46A38C827856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Qrono/Preview Content\"";
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Qrono/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.Qrono;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A46A38CA27856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.QronoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qrono.app/Qrono";
+			};
+			name = Debug;
+		};
+		A46A38CB27856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.QronoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qrono.app/Qrono";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A46A38CD27856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.QronoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Qrono;
+			};
+			name = Debug;
+		};
+		A46A38CE27856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iris.QronoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Qrono;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A46A38D027856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iris.Qrono-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qrono WatchKit Extension.appex/Qrono WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		A46A38D127856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iris.Qrono-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qrono WatchKit Extension.appex/Qrono WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		A46A38D327856634000D04C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iris.Qrono-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Qrono WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		A46A38D427856634000D04C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C62HHAQ8W3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iris.Qrono-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Qrono WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A46A385C2785662E000D04C3 /* Build configuration list for PBXProject "Qrono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38BC27856634000D04C3 /* Debug */,
+				A46A38BD27856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38BE27856634000D04C3 /* Build configuration list for PBXNativeTarget "Qrono WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38BF27856634000D04C3 /* Debug */,
+				A46A38C027856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38C227856634000D04C3 /* Build configuration list for PBXNativeTarget "Qrono WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38C327856634000D04C3 /* Debug */,
+				A46A38C427856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38C627856634000D04C3 /* Build configuration list for PBXNativeTarget "Qrono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38C727856634000D04C3 /* Debug */,
+				A46A38C827856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38C927856634000D04C3 /* Build configuration list for PBXNativeTarget "QronoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38CA27856634000D04C3 /* Debug */,
+				A46A38CB27856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38CC27856634000D04C3 /* Build configuration list for PBXNativeTarget "QronoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38CD27856634000D04C3 /* Debug */,
+				A46A38CE27856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38CF27856634000D04C3 /* Build configuration list for PBXNativeTarget "Qrono WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38D027856634000D04C3 /* Debug */,
+				A46A38D127856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46A38D227856634000D04C3 /* Build configuration list for PBXNativeTarget "Qrono WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A38D327856634000D04C3 /* Debug */,
+				A46A38D427856634000D04C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4D2F8D62786B25F0062B4CD /* XCRemoteSwiftPackageReference "TimeKeeper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/reuschj/TimeKeeper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
+		A4D2F8D92786B2BD0062B4CD /* XCRemoteSwiftPackageReference "AppBackgroundView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/reuschj/AppBackgroundView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		A4D2F8DC2786B33B0062B4CD /* XCRemoteSwiftPackageReference "StrokedShape" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/reuschj/StrokedShape.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		A4D2F8DF2786B3FD0062B4CD /* XCRemoteSwiftPackageReference "Percent" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/reuschj/Percent";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		A4D2F8E22786B4110062B4CD /* XCRemoteSwiftPackageReference "RotatableStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/reuschj/RotatableStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4C1A1212788128A00BE1EA9 /* TimeKeeper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D2F8D62786B25F0062B4CD /* XCRemoteSwiftPackageReference "TimeKeeper" */;
+			productName = TimeKeeper;
+		};
+		A4C1A1232788128A00BE1EA9 /* AppBackgroundView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D2F8D92786B2BD0062B4CD /* XCRemoteSwiftPackageReference "AppBackgroundView" */;
+			productName = AppBackgroundView;
+		};
+		A4C1A1252788128A00BE1EA9 /* StrokedShape */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D2F8DC2786B33B0062B4CD /* XCRemoteSwiftPackageReference "StrokedShape" */;
+			productName = StrokedShape;
+		};
+		A4C1A1272788128A00BE1EA9 /* Percent */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D2F8DF2786B3FD0062B4CD /* XCRemoteSwiftPackageReference "Percent" */;
+			productName = Percent;
+		};
+		A4C1A1292788128A00BE1EA9 /* RotatableStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D2F8E22786B4110062B4CD /* XCRemoteSwiftPackageReference "RotatableStack" */;
+			productName = RotatableStack;
+		};
+		A4D2F8D72786B25F0062B4CD /* TimeKeeper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D2F8D62786B25F0062B4CD /* XCRemoteSwiftPackageReference "TimeKeeper" */;
+			productName = TimeKeeper;
+		};
+		A4D2F8DA2786B2BD0062B4CD /* AppBackgroundView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D2F8D92786B2BD0062B4CD /* XCRemoteSwiftPackageReference "AppBackgroundView" */;
+			productName = AppBackgroundView;
+		};
+		A4D2F8DD2786B33B0062B4CD /* StrokedShape */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D2F8DC2786B33B0062B4CD /* XCRemoteSwiftPackageReference "StrokedShape" */;
+			productName = StrokedShape;
+		};
+		A4D2F8E02786B3FD0062B4CD /* Percent */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D2F8DF2786B3FD0062B4CD /* XCRemoteSwiftPackageReference "Percent" */;
+			productName = Percent;
+		};
+		A4D2F8E32786B4110062B4CD /* RotatableStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D2F8E22786B4110062B4CD /* XCRemoteSwiftPackageReference "RotatableStack" */;
+			productName = RotatableStack;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A46A38592785662E000D04C3 /* Project object */;
+}

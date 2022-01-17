@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AppBackgroundView",
+        "repositoryURL": "https://github.com/reuschj/AppBackgroundView.git",
+        "state": {
+          "branch": null,
+          "revision": "cca7888a67a7510366b12887230a6aaca6e379a9",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "DecimalTime",
+        "repositoryURL": "https://github.com/reuschj/DecimalTime",
+        "state": {
+          "branch": null,
+          "revision": "8fc2e14802db25c5ad8f550b77a454beb89e0c42",
+          "version": "1.0.3"
+        }
+      },
+      {
+        "package": "Percent",
+        "repositoryURL": "https://github.com/reuschj/Percent",
+        "state": {
+          "branch": null,
+          "revision": "59fde1d9f9d9a49d2be5f2ddf847297aaf15dc59",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "RotatableStack",
+        "repositoryURL": "https://github.com/reuschj/RotatableStack",
+        "state": {
+          "branch": null,
+          "revision": "76c74d94f50ac4cf6e4465584d0cdf93bfa55807",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "StrokedShape",
+        "repositoryURL": "https://github.com/reuschj/StrokedShape.git",
+        "state": {
+          "branch": null,
+          "revision": "ee249176841dd8d8565d0d494c47eb99b7993e69",
+          "version": "1.0.3"
+        }
+      },
+      {
+        "package": "TimeKeeper",
+        "repositoryURL": "https://github.com/reuschj/TimeKeeper.git",
+        "state": {
+          "branch": null,
+          "revision": "38c1627d253de67fe49e5831a7f5b0fbb53e91a2",
+          "version": "0.6.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

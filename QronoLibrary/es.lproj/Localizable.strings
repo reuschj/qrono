@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  Qrono
+
+  Created by Justin Reusch on 1/5/22.
+  
+*/
+
+
+// Settings -------------------- /
+
+"analogClock" = "Reloj analogo";
+"digitalClock" = "Reloj digital";
+"dateDisplay" = "Fecha";
+"settings" = "Configuracions";
+"showModules" = "Mostrar módulos";
+"clockType" = "Tipo de reloj";
+"twelveHour" = "12-hora";
+"twentyFourHour" = "24-hora";
+"decimal" = "Decimal";
+"precision" = "Precisión";
+"low" = "Bajo";
+"medium" = "Medio";
+"high" = "Alto";
+"updatesSing" = "actualización por segundo";
+"updatesPlu" = "actualizaciones por segundo";
+"otherOptions" = "Otras opciones";
+"showTickMarks" = "Mostrar marcas";
+"showPeriodDisplay" = "Mostrar mano período (AM/PM)";
+"showTickTockDisplay" = "Mostrar péndulo";
+"theme" = "Tema";
+"standard" = "Estándar";
+"impact" = "Impacto";
