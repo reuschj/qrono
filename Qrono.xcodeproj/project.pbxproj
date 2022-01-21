@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A46A38652785662E000D04C3 /* QronoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38642785662E000D04C3 /* QronoApp.swift */; };
 		A46A38672785662E000D04C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38662785662E000D04C3 /* ContentView.swift */; };
-		A46A386927856630000D04C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A386827856630000D04C3 /* Assets.xcassets */; };
 		A46A386C27856630000D04C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A386B27856630000D04C3 /* Preview Assets.xcassets */; };
 		A46A387627856631000D04C3 /* QronoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A387527856631000D04C3 /* QronoTests.swift */; };
 		A46A388027856631000D04C3 /* QronoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A387F27856631000D04C3 /* QronoUITests.swift */; };
@@ -25,6 +24,11 @@
 		A46A38AF27856634000D04C3 /* Qrono_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38AE27856634000D04C3 /* Qrono_WatchKit_AppTests.swift */; };
 		A46A38B927856634000D04C3 /* Qrono_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38B827856634000D04C3 /* Qrono_WatchKit_AppUITests.swift */; };
 		A46A38BB27856634000D04C3 /* Qrono_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38BA27856634000D04C3 /* Qrono_WatchKit_AppUITestsLaunchTests.swift */; };
+		A4B87E762797E109002BBC29 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E752797E108002BBC29 /* Media.xcassets */; };
+		A4B87E782798845D002BBC29 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E772798845D002BBC29 /* Media.xcassets */; };
+		A4B87E79279A5D31002BBC29 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E752797E108002BBC29 /* Media.xcassets */; };
+		A4B87E7B279A5D85002BBC29 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E7A279A5D85002BBC29 /* Media.xcassets */; };
+		A4B87E7C279A5D85002BBC29 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E7A279A5D85002BBC29 /* Media.xcassets */; };
 		A4C1A12027880B0200BE1EA9 /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F12786B7E80062B4CD /* AnalogClockView.swift */; };
 		A4C1A1222788128A00BE1EA9 /* TimeKeeper in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1212788128A00BE1EA9 /* TimeKeeper */; };
 		A4C1A1242788128A00BE1EA9 /* AppBackgroundView in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1232788128A00BE1EA9 /* AppBackgroundView */; };
@@ -93,7 +97,6 @@
 		A4D2F8D1278696400062B4CD /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4D2F8C1278696400062B4CD /* Montserrat-Italic.ttf */; };
 		A4D2F8D32786A3300062B4CD /* Qrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8D22786A3300062B4CD /* Qrono.swift */; };
 		A4D2F8D42786A3300062B4CD /* Qrono.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8D22786A3300062B4CD /* Qrono.swift */; };
-		A4D2F8D52786B1240062B4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A386827856630000D04C3 /* Assets.xcassets */; };
 		A4D2F8D82786B25F0062B4CD /* TimeKeeper in Frameworks */ = {isa = PBXBuildFile; productRef = A4D2F8D72786B25F0062B4CD /* TimeKeeper */; };
 		A4D2F8DB2786B2BD0062B4CD /* AppBackgroundView in Frameworks */ = {isa = PBXBuildFile; productRef = A4D2F8DA2786B2BD0062B4CD /* AppBackgroundView */; };
 		A4D2F8DE2786B33B0062B4CD /* StrokedShape in Frameworks */ = {isa = PBXBuildFile; productRef = A4D2F8DD2786B33B0062B4CD /* StrokedShape */; };
@@ -197,7 +200,6 @@
 		A46A38612785662E000D04C3 /* Qrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46A38642785662E000D04C3 /* QronoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QronoApp.swift; sourceTree = "<group>"; };
 		A46A38662785662E000D04C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A46A386827856630000D04C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46A386B27856630000D04C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A46A387127856631000D04C3 /* QronoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QronoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46A387527856631000D04C3 /* QronoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QronoTests.swift; sourceTree = "<group>"; };
@@ -218,6 +220,10 @@
 		A46A38B427856634000D04C3 /* Qrono WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qrono WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46A38B827856634000D04C3 /* Qrono_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qrono_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		A46A38BA27856634000D04C3 /* Qrono_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qrono_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4B87E752797E108002BBC29 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		A4B87E772798845D002BBC29 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		A4B87E7A279A5D85002BBC29 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		A4B87E7E279A5F90002BBC29 /* AppIcon.afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppIcon.afdesign; sourceTree = "<group>"; };
 		A4C1A12C27893C0F00BE1EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4C1A1312789663700BE1EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A4C1A13227896A8500BE1EA9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -330,8 +336,8 @@
 			isa = PBXGroup;
 			children = (
 				A4C1A13227896A8500BE1EA9 /* README.md */,
-				A4D2F8E52786B7AB0062B4CD /* QronoUILibrary */,
 				A4D2F82E278689910062B4CD /* QronoLibrary */,
+				A4D2F8E52786B7AB0062B4CD /* QronoUILibrary */,
 				A46A38632785662E000D04C3 /* Qrono */,
 				A46A387427856631000D04C3 /* QronoTests */,
 				A46A387E27856631000D04C3 /* QronoUITests */,
@@ -339,6 +345,7 @@
 				A46A389427856632000D04C3 /* Qrono WatchKit Extension */,
 				A46A38AD27856634000D04C3 /* Qrono WatchKit AppTests */,
 				A46A38B727856634000D04C3 /* Qrono WatchKit AppUITests */,
+				A4B87E7D279A5F90002BBC29 /* QronoDesign */,
 				A46A38622785662E000D04C3 /* Products */,
 				A4C1A11B2787ED2B00BE1EA9 /* Frameworks */,
 			);
@@ -365,6 +372,7 @@
 				A46A38642785662E000D04C3 /* QronoApp.swift */,
 				A46A38662785662E000D04C3 /* ContentView.swift */,
 				A46A386A27856630000D04C3 /* Preview Content */,
+				A4B87E772798845D002BBC29 /* Media.xcassets */,
 			);
 			path = Qrono;
 			sourceTree = "<group>";
@@ -412,6 +420,7 @@
 				A46A38A527856634000D04C3 /* PushNotificationPayload.apns */,
 				A46A38A127856634000D04C3 /* Preview Content */,
 				A4C1A12C27893C0F00BE1EA9 /* Info.plist */,
+				A4B87E752797E108002BBC29 /* Media.xcassets */,
 			);
 			path = "Qrono WatchKit Extension";
 			sourceTree = "<group>";
@@ -441,6 +450,14 @@
 			path = "Qrono WatchKit AppUITests";
 			sourceTree = "<group>";
 		};
+		A4B87E7D279A5F90002BBC29 /* QronoDesign */ = {
+			isa = PBXGroup;
+			children = (
+				A4B87E7E279A5F90002BBC29 /* AppIcon.afdesign */,
+			);
+			path = QronoDesign;
+			sourceTree = "<group>";
+		};
 		A4C1A11B2787ED2B00BE1EA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,7 +473,6 @@
 				A4D2F82F27868B280062B4CD /* Extensions */,
 				A4D2F83E27868B280062B4CD /* UI */,
 				A4D2F83B27868B280062B4CD /* Utilities */,
-				A46A386827856630000D04C3 /* Assets.xcassets */,
 				A4D2F8B7278696400062B4CD /* Fonts */,
 				A4D2F8AB27868E550062B4CD /* Localizable.strings */,
 				A4D2F88C27868B460062B4CD /* strings.swift */,
@@ -582,6 +598,7 @@
 				A4D2F8E72786B7E80062B4CD /* DigitalClock and Date */,
 				A4D2F8E62786B7E80062B4CD /* MainDisplay.swift */,
 				A4D2F8F22786B7E80062B4CD /* Settings */,
+				A4B87E7A279A5D85002BBC29 /* Media.xcassets */,
 			);
 			path = QronoUILibrary;
 			sourceTree = "<group>";
@@ -840,14 +857,15 @@
 			files = (
 				A4D2F8CE278696400062B4CD /* Montserrat-Regular.ttf in Resources */,
 				A4D2F8CA278696400062B4CD /* Montserrat-Bold.ttf in Resources */,
+				A4B87E7B279A5D85002BBC29 /* Media.xcassets in Resources */,
 				A46A386C27856630000D04C3 /* Preview Assets.xcassets in Resources */,
 				A4D2F8C8278696400062B4CD /* Montserrat-Thin.ttf in Resources */,
 				A4D2F8A827868E550062B4CD /* Localizable.strings in Resources */,
 				A4D2F8C4278696400062B4CD /* Montserrat-Medium.ttf in Resources */,
 				A4D2F8C6278696400062B4CD /* Montserrat-Light.ttf in Resources */,
 				A4D2F8CC278696400062B4CD /* Montserrat-Black.ttf in Resources */,
-				A46A386927856630000D04C3 /* Assets.xcassets in Resources */,
 				A4D2F8D0278696400062B4CD /* Montserrat-Italic.ttf in Resources */,
+				A4B87E782798845D002BBC29 /* Media.xcassets in Resources */,
 				A4D2F8C2278696400062B4CD /* MajorMonoDisplay-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -870,6 +888,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B87E79279A5D31002BBC29 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,14 +898,15 @@
 			files = (
 				A4D2F8CF278696400062B4CD /* Montserrat-Regular.ttf in Resources */,
 				A4D2F8CB278696400062B4CD /* Montserrat-Bold.ttf in Resources */,
+				A4B87E7C279A5D85002BBC29 /* Media.xcassets in Resources */,
 				A46A38A327856634000D04C3 /* Preview Assets.xcassets in Resources */,
 				A4D2F8C9278696400062B4CD /* Montserrat-Thin.ttf in Resources */,
-				A4D2F8D52786B1240062B4CD /* Assets.xcassets in Resources */,
 				A4D2F8A927868E550062B4CD /* Localizable.strings in Resources */,
 				A4D2F8C5278696400062B4CD /* Montserrat-Medium.ttf in Resources */,
 				A4D2F8C7278696400062B4CD /* Montserrat-Light.ttf in Resources */,
 				A4D2F8CD278696400062B4CD /* Montserrat-Black.ttf in Resources */,
 				A4C1A12F2789534C00BE1EA9 /* MajorMonoDisplay-Regular.ttf in Resources */,
+				A4B87E762797E109002BBC29 /* Media.xcassets in Resources */,
 				A4D2F8D1278696400062B4CD /* Montserrat-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
