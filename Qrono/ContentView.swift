@@ -11,7 +11,7 @@ import AppBackgroundView
 
 struct ContentView: View {
 
-    @EnvironmentObject var qrono: Qrono
+    @ObservedObject var qrono: Qrono
 
     private var theme: QronoTheme.Settings { qrono.settings.theme.settings }
     
@@ -20,16 +20,20 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 AppBackgroundView(theme.appBackground ?? Color.clear) {
-                    MainDisplay(qrono: qrono)
+                    MainDisplay(
+                        timeEmitter: Qrono.shared.timeEmitter,
+                        settings: Qrono.shared.settings
+                    )
                 }
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .environmentObject(qrono)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(qrono: Qrono.shared)
     }
 }

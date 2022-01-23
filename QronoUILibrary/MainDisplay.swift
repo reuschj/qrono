@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 import RotatableStack
 
 /**
@@ -14,22 +15,20 @@ import RotatableStack
  */
 struct MainDisplay: View {
 
-    @ObservedObject var qrono: Qrono
+    /// Global app settings
+    var timeEmitter: ClockTimeEmitter
 
     /// Global app settings
-    var timeEmitter: ClockTimeEmitter { qrono.timeEmitter }
+    @ObservedObject var settings: QronoSettings
 
-    /// Global app settings
-    var settings: QronoSettings { qrono.settings }
-
-    private var theme: QronoTheme.Settings { qrono.settings.theme.settings }
+    private var theme: QronoTheme.Settings { settings.theme.settings }
     
-    private var visibleModules: VisibleModules { qrono.settings.visibleModules }
+    private var visibleModules: VisibleModules { settings.visibleModules }
     
     var body: some View {
         RotatableStack {
             Spacer()
-            if qrono.settings.visibleModules.analogClock {
+            if visibleModules.analogClock {
                 AnalogClockView(
                     timeEmitter: timeEmitter,
                     settings: settings
@@ -66,7 +65,9 @@ struct MainDisplay: View {
 
 struct MainDisplay_Previews: PreviewProvider {
     static var previews: some View {
-        MainDisplay(qrono: Qrono.shared)
-            .environmentObject(Qrono.shared)
+        MainDisplay(
+            timeEmitter: Qrono.shared.timeEmitter,
+            settings: Qrono.shared.settings
+        )
     }
 }

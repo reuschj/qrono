@@ -6,16 +6,15 @@
 //
 
 import SwiftUI
-import Combine
 
 @main
 struct QronoApp: App {
     
-    @StateObject var qrono: Qrono = .shared
+    var qrono: Qrono = .shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(qrono)
+            ContentView(qrono: qrono)
         }
     }
 }
