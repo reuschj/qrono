@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 import TimeKeeper
 
 /**
@@ -15,14 +16,14 @@ import TimeKeeper
 struct DateDisplayView: View {
     
     /// Emits the current time and date at regular intervals
-    @ObservedObject var timeEmitter: ClockTimeEmitter = Qrono.shared.timeEmitter
-    
-    /// The emitted time from the `timeEmitter`
-    var time: TimeKeeper { timeEmitter.time }
+    @ObservedObject var timeEmitter: ClockTimeEmitter
     
     /// Global app settings
-    @ObservedObject var settings: QronoSettings = Qrono.shared.settings
-    
+    @ObservedObject var settings: QronoSettings
+
+    /// The emitted time from the `timeEmitter`
+    var time: TimeKeeper { timeEmitter.time }
+
     private var theme: Theme { settings.theme.settings.date }
     private var colors: Theme.Colors { theme.colors }
     
@@ -54,5 +55,15 @@ struct DateDisplayView: View {
         struct Colors {
             var dateText: Color = .primary
         }
+    }
+}
+
+struct DateDisplayView_Previews: PreviewProvider {
+    static var previews: some View {
+        DateDisplayView(
+            timeEmitter: Qrono.shared.timeEmitter,
+            settings: Qrono.shared.settings
+        )
+            .padding()
     }
 }

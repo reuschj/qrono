@@ -7,21 +7,22 @@
 //
 
 import SwiftUI
+import Combine
 import TimeKeeper
 
 struct DigitalClockView: View {
     
     /// Emits the current time and date at regular intervals
-    @ObservedObject var timeEmitter: ClockTimeEmitter = Qrono.shared.timeEmitter
+    @ObservedObject var timeEmitter: ClockTimeEmitter
     
     /// Global app settings
-    @ObservedObject var settings: QronoSettings = Qrono.shared.settings
+    @ObservedObject var settings: QronoSettings
     
     private var theme: Theme { settings.theme.settings.digital }
     private var colors: Theme.Colors { theme.colors }
     
     /// Type of clock, 12-hour, 24-hour or decimal
-    var type: ClockType = .twelveHour
+    var type: ClockType { settings.clockType }
     
     /// The emitted time from the `timeEmitter`
     var time: TimeKeeper { timeEmitter.time }
@@ -121,5 +122,15 @@ struct DigitalClockView: View {
             var timeDigits: Color = .primary
             var timeSeparators: Color = .gray
         }
+    }
+}
+
+struct DigitalClockView_Previews: PreviewProvider {
+    static var previews: some View {
+        DigitalClockView(
+            timeEmitter: Qrono.shared.timeEmitter,
+            settings: Qrono.shared.settings
+        )
+            .padding()
     }
 }

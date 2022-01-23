@@ -6,30 +6,34 @@
 //
 
 import SwiftUI
+import Combine
 import AppBackgroundView
 
 struct ContentView: View {
 
-    /// Global app settings
-    @ObservedObject var settings: QronoSettings = Qrono.shared.settings
+    @ObservedObject var qrono: Qrono
 
-    private var theme: QronoTheme.Settings { settings.theme.settings }
+    private var theme: QronoTheme.Settings { qrono.settings.theme.settings }
     
     var body: some View {
         
         NavigationView {
             ZStack {
                 AppBackgroundView(theme.appBackground ?? Color.clear) {
-                    MainDisplay()
+                    MainDisplay(
+                        timeEmitter: Qrono.shared.timeEmitter,
+                        settings: Qrono.shared.settings
+                    )
                 }
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .environmentObject(qrono)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(qrono: Qrono.shared)
     }
 }

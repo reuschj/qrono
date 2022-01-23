@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct QronoApp: App {
 
+    var qrono: Qrono = .shared
+
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ContentView(qrono: qrono)
             }
         }
 

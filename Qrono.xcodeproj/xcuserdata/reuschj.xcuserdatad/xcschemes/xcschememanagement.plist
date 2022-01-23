@@ -24,39 +24,28 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Qrono WatchKit App (Complication).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Qrono WatchKit App (Notification).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Qrono WatchKit App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Qrono.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>A46A38602785662E000D04C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A46A387027856631000D04C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A46A387A27856631000D04C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A46A388427856631000D04C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A46A38A927856634000D04C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A46A38B327856634000D04C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

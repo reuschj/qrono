@@ -6,19 +6,21 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+
+    @ObservedObject var qrono: Qrono
+
     var body: some View {
         TabView {
             AnalogClockView(
-                timeEmitter: Qrono.shared.timeEmitter,
-                type: .decimal,
-                settings: Qrono.shared.settings
+                timeEmitter: qrono.timeEmitter,
+                settings: qrono.settings
             ).padding(8)
             DigitalClockView(
-                timeEmitter: Qrono.shared.timeEmitter,
-                settings: Qrono.shared.settings,
-                type: .decimal
+                timeEmitter: qrono.timeEmitter,
+                settings: qrono.settings
             ).padding(8)
         }.ignoresSafeArea(edges: .all)
     }
@@ -26,6 +28,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(qrono: Qrono.shared)
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 /// Represents the app
 class Qrono: ObservableObject {

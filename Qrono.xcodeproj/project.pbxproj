@@ -29,6 +29,7 @@
 		A4B87E79279A5D31002BBC29 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E752797E108002BBC29 /* Media.xcassets */; };
 		A4B87E7B279A5D85002BBC29 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E7A279A5D85002BBC29 /* Media.xcassets */; };
 		A4B87E7C279A5D85002BBC29 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E7A279A5D85002BBC29 /* Media.xcassets */; };
+		A4BA0832279D17EF00F61B4F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E7A279A5D85002BBC29 /* Media.xcassets */; };
 		A4C1A12027880B0200BE1EA9 /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F12786B7E80062B4CD /* AnalogClockView.swift */; };
 		A4C1A1222788128A00BE1EA9 /* TimeKeeper in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1212788128A00BE1EA9 /* TimeKeeper */; };
 		A4C1A1242788128A00BE1EA9 /* AppBackgroundView in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1232788128A00BE1EA9 /* AppBackgroundView */; };
@@ -888,6 +889,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BA0832279D17EF00F61B4F /* Media.xcassets in Resources */,
 				A4B87E79279A5D31002BBC29 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

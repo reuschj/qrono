@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 import StrokedShape
 import Percent
 
@@ -16,13 +17,13 @@ import Percent
 struct AnalogClockView: View {
     
     /// Emits the current time and date at regular intervals
-    var timeEmitter: ClockTimeEmitter = Qrono.shared.timeEmitter
-    
-    /// Type of clock, 12-hour, 24-hour or decimal
-    var type: ClockType = .twelveHour
+    @ObservedObject var timeEmitter: ClockTimeEmitter
     
     /// Global app settings
-    @ObservedObject var settings: QronoSettings = Qrono.shared.settings
+    @ObservedObject var settings: QronoSettings
+    
+    /// Type of clock, 12-hour, 24-hour or decimal
+    private var type: ClockType { settings.clockType }
     
     private var theme: Theme { settings.theme.settings.analog }
     private var colors: Theme.Colors { theme.colors }
@@ -172,7 +173,6 @@ struct AnalogClockView_Previews: PreviewProvider {
     static var previews: some View {
         AnalogClockView(
             timeEmitter: Qrono.shared.timeEmitter,
-            type: .twelveHour,
             settings: Qrono.shared.settings
         )
             .padding()
