@@ -12,13 +12,11 @@ struct ContentView: View {
         TabView {
             AnalogClockView(
                 timeEmitter: Qrono.shared.timeEmitter,
-                type: .decimal,
                 settings: Qrono.shared.settings
             ).padding(8)
             DigitalClockView(
                 timeEmitter: Qrono.shared.timeEmitter,
-                settings: Qrono.shared.settings,
-                type: .decimal
+                settings: Qrono.shared.settings
             ).padding(8)
         }.ignoresSafeArea(edges: .all)
     }

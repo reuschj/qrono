@@ -6,24 +6,16 @@
 //
 
 import SwiftUI
+import Combine
 
 @main
 struct QronoApp: App {
-
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    @StateObject var qrono: Qrono = .shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(qrono)
         }
-    }
-}
-
-class AppDelegate: NSObject, UIApplicationDelegate {
-
-    var Qrono: Qrono = .shared
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        return true
     }
 }
