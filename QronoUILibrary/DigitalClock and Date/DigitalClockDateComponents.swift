@@ -27,11 +27,11 @@ struct DigitalClockSeparator: View {
     
     var body: some View {
         HStack {
-            Spacer().fixedSize().frame(width: width / 2)
+            Spacer().fixedSize().frame(maxWidth: width / 2)
             Text(String(character))
                 .font(font)
                 .foregroundColor(color)
-            Spacer().fixedSize().frame(width: width / 2)
+            Spacer().fixedSize().frame(maxWidth: width / 2)
         }
     }
 }

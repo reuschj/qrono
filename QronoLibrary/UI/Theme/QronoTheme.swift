@@ -119,9 +119,9 @@ class QronoTheme: Hashable, Comparable {
                     timeDigits: .primary,
                     timeSeparators: .secondary
                 ),
-                timeDigits: FixedClockFont(.title),
-                timeSeparators: FixedClockFont(.body),
-                periodDigits: nil,
+                timeDigits: FlexClockFont(scale: UIPercent(oneOver: 6, of: .container(.diameter, of: "clock"))),
+                timeSeparators: FlexClockFont(scale: UIPercent(oneOver: 24, of: .container(.diameter, of: "clock"))),
+                periodDigits: FlexClockFont(scale: UIPercent(oneOver: 16, of: .container(.diameter, of: "clock"))),
                 separatorCharacter: ":"
             ),
             date: DateDisplayView.Theme(
@@ -179,7 +179,7 @@ class QronoTheme: Hashable, Comparable {
                 ),
                 timeDigits: FlexClockFont(
                     name: CustomFonts.MajorMonoDisplay.regular,
-                    scale: UIPercent(oneOver: 12, of: .screen(.width))
+                    scale: UIPercent(oneOver: 9, of: .screen(.width))
                 ),
                 timeSeparators: FlexClockFont(
                     name: CustomFonts.MajorMonoDisplay.regular,
@@ -187,7 +187,7 @@ class QronoTheme: Hashable, Comparable {
                 ),
                 periodDigits: FlexClockFont(
                     name: CustomFonts.Montserrat.light,
-                    scale: UIPercent(oneOver: 14, of: .screen(.width))
+                    scale: UIPercent(oneOver: 17, of: .screen(.width))
                 ),
                 separatorCharacter: ":"
             ),
@@ -197,7 +197,7 @@ class QronoTheme: Hashable, Comparable {
                 ),
                 dateText: FlexClockFont(
                     name: CustomFonts.Montserrat.regular,
-                    scale: UIPercent(oneOver: 14, of: .screen(.width))
+                    scale: UIPercent(oneOver: 11, of: .screen(.width))
                 )
             )
         )

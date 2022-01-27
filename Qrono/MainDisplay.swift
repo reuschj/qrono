@@ -39,6 +39,7 @@ struct MainDisplay: View {
                 VStack {
                     Spacer()
                     if visibleModules.digitalClock {
+                        Spacer()
                         DigitalClockView(
                             timeEmitter: timeEmitter,
                             settings: settings
@@ -47,6 +48,7 @@ struct MainDisplay: View {
                         Spacer()
                     }
                     if visibleModules.dateDisplay {
+                        Spacer()
                         DateDisplayView(
                             timeEmitter: timeEmitter,
                             settings: settings
@@ -54,6 +56,7 @@ struct MainDisplay: View {
                             .padding()
                         Spacer()
                     }
+                    Spacer()
                 }
             }
         }
