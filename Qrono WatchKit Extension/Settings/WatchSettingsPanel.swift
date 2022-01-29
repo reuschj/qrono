@@ -116,26 +116,36 @@ struct WatchSettingsPanel: View {
             )
                 .frame(height: frameHeight.value)
             
-            Toggle(isOn: showTickMarks) {
-                Text(strings.showTickMarks)
-            }
-            .padding(.vertical, UIMeasurement(2).value)
-            .padding(.trailing, UIMeasurement().value)
-
-            Toggle(isOn: showPeriodDisplay) {
-                Text(strings.showPeriodDisplay)
-            }
-            .padding(.vertical, UIMeasurement(2).value)
-            .padding(.trailing, UIMeasurement().value)
-
-            Toggle(isOn: showTickTockDisplay) {
-                Text(strings.showTickTockDisplay)
-            }
-            .padding(.vertical, UIMeasurement(2).value)
-            .padding(.trailing, UIMeasurement().value)
+            SettingsToggle(
+                isOn: showTickMarks,
+                label: strings.showTickMarks
+            )
+            
+            SettingsToggle(
+                isOn: showPeriodDisplay,
+                label: strings.showPeriodDisplay
+            )
+            
+            SettingsToggle(
+                isOn: showTickTockDisplay,
+                label: strings.showTickTockDisplay
+            )
 
         }
         .padding(.horizontal, UIMeasurement(2).value)
+    }
+    
+    struct SettingsToggle: View {
+        var isOn: Binding<Bool>
+        var label: String
+        
+        var body: some View {
+            Toggle(isOn: isOn) {
+                Text(label)
+            }
+            .padding(.vertical, UIMeasurement(2).value)
+            .padding(.trailing, UIMeasurement().value)
+        }
     }
 }
 
