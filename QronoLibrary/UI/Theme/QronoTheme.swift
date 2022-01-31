@@ -120,7 +120,8 @@ class QronoTheme: Hashable, Comparable {
                     timeSeparators: .secondary
                 ),
                 timeDigits: FlexClockFont(scale: UIPercent(oneOver: 6, of: .container(.diameter, of: "clock"))),
-                timeSeparators: FlexClockFont(scale: UIPercent(oneOver: 24, of: .container(.diameter, of: "clock"))),
+                timeSeparators: FlexClockFont(scale: UIPercent(oneOver: 8, of: .container(.diameter, of: "clock"))),
+                separatorWidth: UIMeasurement(3),
                 periodDigits: FlexClockFont(scale: UIPercent(oneOver: 16, of: .container(.diameter, of: "clock"))),
                 separatorCharacter: ":"
             ),
@@ -158,7 +159,7 @@ class QronoTheme: Hashable, Comparable {
                 outlineWidth: 2,
                 numbers: FlexClockFont(
                     name: CustomFonts.MajorMonoDisplay.regular,
-                    scale: UIPercent(oneOver: 12, of: .container(.diameter, of: "clock"))
+                    scale: UIPercent(oneOver: 14, of: .container(.diameter, of: "clock"))
                 ),
                 hourHand: ClockHand.Hour.getDefaultDimensions(outlineWidth: 2),
                 minuteHand: ClockHand.Minute.defaultDimensions,
@@ -179,15 +180,16 @@ class QronoTheme: Hashable, Comparable {
                 ),
                 timeDigits: FlexClockFont(
                     name: CustomFonts.MajorMonoDisplay.regular,
-                    scale: UIPercent(oneOver: 9, of: .screen(.width))
+                    scale: UIPercent(oneOver: 6, of: .screen(.width))
                 ),
                 timeSeparators: FlexClockFont(
                     name: CustomFonts.MajorMonoDisplay.regular,
-                    scale: UIPercent(oneOver: 24, of: .screen(.width))
+                    scale: UIPercent(oneOver: 12, of: .screen(.width))
                 ),
+                separatorWidth: UIMeasurement(2),
                 periodDigits: FlexClockFont(
                     name: CustomFonts.Montserrat.light,
-                    scale: UIPercent(oneOver: 17, of: .screen(.width))
+                    scale: UIPercent(oneOver: 18, of: .screen(.width))
                 ),
                 separatorCharacter: ":"
             ),
@@ -197,7 +199,11 @@ class QronoTheme: Hashable, Comparable {
                 ),
                 dateText: FlexClockFont(
                     name: CustomFonts.Montserrat.regular,
-                    scale: UIPercent(oneOver: 11, of: .screen(.width))
+                    scale: UIPercent(oneOver: 12, of: .screen(.width))
+                ),
+                smallFormatDateText: FlexClockFont(
+                    name: CustomFonts.Montserrat.regular,
+                    scale: UIPercent(oneOver: 9, of: .screen(.width))
                 )
             )
         )

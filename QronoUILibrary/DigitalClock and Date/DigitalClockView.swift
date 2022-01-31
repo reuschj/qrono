@@ -78,9 +78,9 @@ struct DigitalClockView: View {
     private func makeDigitalDisplay(within width: CGFloat) -> some View {
         let timeDigitFont: Font = getTimeDigitFont(within: width)
         let periodFont: Font = getPeriodFont(within: width) ?? timeDigitFont
-        let separatorFont: Font = getTimeDigitFont(within: width)
+        let separatorFont: Font = getSeparatorFont(within: width)
         let _separator_ = DigitalClockSeparator(
-            width: UIMeasurement(0.25).value,
+            width: theme.separatorWidth,
             color: colors.timeSeparators,
             font: separatorFont,
             character: type == .decimal ? theme.separatorCharacterDecimal : theme.separatorCharacter
@@ -124,10 +124,11 @@ struct DigitalClockView: View {
         var colors: Colors = Colors()
         var timeDigits: ClockFont = FixedClockFont(.title)
         var timeSeparators: ClockFont = FixedClockFont(.title)
+        var separatorWidth: UIMeasurement = UIMeasurement(2)
         var periodDigits: ClockFont? = nil
         var separatorCharacter: Character = ":"
         var separatorCharacterDecimal: Character = "."
-        var verticalAlignment: VerticalAlignment = .center
+        var verticalAlignment: VerticalAlignment = .firstTextBaseline
         
         struct Colors {
             var timeDigits: Color = .primary
@@ -139,12 +140,13 @@ struct DigitalClockView: View {
 
 struct DigitalClockView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
+        Qrono.shared.settings.theme = .altTheme
+        return Group {
             DigitalClockView(
                 timeEmitter: Qrono.shared.timeEmitter,
                 settings: Qrono.shared.settings
             )
-                .preferredColorScheme(.light)
+                .preferredColorScheme(.dark)
                 .padding()
         }
     }

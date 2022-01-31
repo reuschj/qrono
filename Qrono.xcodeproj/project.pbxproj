@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A43C75D127AB9E3E0009128E /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E82786B7E80062B4CD /* DigitalClockView.swift */; };
 		A46A38652785662E000D04C3 /* QronoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38642785662E000D04C3 /* QronoApp.swift */; };
 		A46A38672785662E000D04C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38662785662E000D04C3 /* ContentView.swift */; };
 		A46A386C27856630000D04C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A386B27856630000D04C3 /* Preview Assets.xcassets */; };
@@ -33,7 +34,6 @@
 		A4BA0834279E300700F61B4F /* MainWatchDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA0833279E300700F61B4F /* MainWatchDisplay.swift */; };
 		A4BA0838279E313700F61B4F /* WatchSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA0837279E313700F61B4F /* WatchSettingsPanel.swift */; };
 		A4BA083A279E314A00F61B4F /* WatchSettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA0839279E314A00F61B4F /* WatchSettingsLink.swift */; };
-		A4BA083B279E529000F61B4F /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E82786B7E80062B4CD /* DigitalClockView.swift */; };
 		A4C1A12027880B0200BE1EA9 /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F12786B7E80062B4CD /* AnalogClockView.swift */; };
 		A4C1A1222788128A00BE1EA9 /* TimeKeeper in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1212788128A00BE1EA9 /* TimeKeeper */; };
 		A4C1A1242788128A00BE1EA9 /* AppBackgroundView in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1232788128A00BE1EA9 /* AppBackgroundView */; };
@@ -983,7 +983,7 @@
 				A4D2F9022786B7E80062B4CD /* TickTockDisplayView.swift in Sources */,
 				A4D2F86027868B280062B4CD /* limitToRange.swift in Sources */,
 				A4D2F9082786B7E80062B4CD /* AnalogClockView.swift in Sources */,
-				A4BA083B279E529000F61B4F /* DigitalClockView.swift in Sources */,
+				A43C75D127AB9E3E0009128E /* DigitalClockView.swift in Sources */,
 				A4D2F89F27868B460062B4CD /* strings.swift in Sources */,
 				A4D2F8F62786B7E80062B4CD /* MainDisplay.swift in Sources */,
 				A4D2F9062786B7E80062B4CD /* ClockNumbers.swift in Sources */,
@@ -1733,7 +1733,7 @@
 			repositoryURL = "https://github.com/reuschj/RotatableStack";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

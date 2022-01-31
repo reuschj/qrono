@@ -72,10 +72,12 @@ struct WatchSettingsPanel: View {
         return "\(updatesPerSecond) \(updatesPerSecond > 1 ? strings.updatesPlu : strings.updatesSing)"
     }
     
-    private let frameHeight: UIMeasurement = .init(8)
+    private let frameHeight: UIMeasurement = .init(9)
+    private var pickerHeight: CGFloat { frameHeight.value }
 
     var body: some View {
         ScrollView {
+            // App theme picker -------------------- /
             Picker(
                 strings.theme,
                 selection: theme,
@@ -89,8 +91,9 @@ struct WatchSettingsPanel: View {
                     }
                 }
             )
-                .frame(height: frameHeight.value)
+                .frame(height: pickerHeight)
 
+            // Clock type picker ----------------- /
             Picker(
                 selection: clockType,
                 label: Text(strings.clockType),
@@ -103,8 +106,9 @@ struct WatchSettingsPanel: View {
                         .tag(ClockType.decimal)
                 }
             )
-                .frame(height: frameHeight.value)
-            
+                .frame(height: pickerHeight)
+
+            // Clock precision picker -------------- /
             Picker(
                 selection: clockPrecision,
                 label: Text(strings.precision),
@@ -114,18 +118,21 @@ struct WatchSettingsPanel: View {
                     Text(strings.high).tag(ClockPrecision.high)
                 }
             )
-                .frame(height: frameHeight.value)
-            
+                .frame(height: pickerHeight)
+
+            // Tick mark visibility toggle ---------- /
             SettingsToggle(
                 isOn: showTickMarks,
                 label: strings.showTickMarks
             )
-            
+ 
+            // Period display toggle ---------- /
             SettingsToggle(
                 isOn: showPeriodDisplay,
                 label: strings.showPeriodDisplay
             )
-            
+
+            // Tick tock display toggle ---------- /
             SettingsToggle(
                 isOn: showTickTockDisplay,
                 label: strings.showTickTockDisplay
@@ -133,8 +140,11 @@ struct WatchSettingsPanel: View {
 
         }
         .padding(.horizontal, UIMeasurement(2).value)
+        .navigationTitle(strings.settings)
+        .navigationBarTitleDisplayMode(.automatic)
     }
     
+    /// Common wrapper for toggles ---------------------- /
     struct SettingsToggle: View {
         var isOn: Binding<Bool>
         var label: String
@@ -151,9 +161,11 @@ struct WatchSettingsPanel: View {
 
 struct WatchSettingsPanel_Previews: PreviewProvider {
     static var previews: some View {
-        WatchSettingsPanel(
-            timeEmitter: Qrono.shared.timeEmitter,
-            settings: Qrono.shared.settings
-        )
+        NavigationView {
+            WatchSettingsPanel(
+                timeEmitter: Qrono.shared.timeEmitter,
+                settings: Qrono.shared.settings
+            )
+        }
     }
 }

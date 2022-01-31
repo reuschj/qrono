@@ -14,7 +14,7 @@ import SwiftUI
 struct DigitalClockSeparator: View {
     
     /// The width of the separation including visual character and padding
-    var width: CGFloat = UIMeasurement(0.5).value
+    var width: UIMeasurement = UIMeasurement(3)
     
     /// The color of the visual character in the separator
     var color: Color = .secondary
@@ -27,12 +27,11 @@ struct DigitalClockSeparator: View {
     
     var body: some View {
         HStack {
-            Spacer().fixedSize().frame(maxWidth: width / 2)
             Text(String(character))
                 .font(font)
                 .foregroundColor(color)
-            Spacer().fixedSize().frame(maxWidth: width / 2)
         }
+        .frame(maxWidth: width.value, alignment: .center)
     }
 }
 
@@ -60,9 +59,11 @@ struct TimeTextBlock: View {
     private var fullText: String { "\(self.pre ?? "")\(self.text ?? "")\(self.post ?? "")" }
     
     var body: some View {
-        Text(fullText)
-            .font(font)
+        HStack {
+            Text(fullText)
+                .font(font)
             .foregroundColor(color)
+        }
     }
 }
 
@@ -88,5 +89,7 @@ struct TimeNumberBlock: View {
     
     var body: some View {
         TimeTextBlock(text: "\(number ?? 0)", color: color, font: font, pre: pre, post: post)
+            .fixedSize()
+            .allowsTightening(true)
     }
 }

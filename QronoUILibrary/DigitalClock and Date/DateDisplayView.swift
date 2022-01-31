@@ -27,16 +27,22 @@ struct DateDisplayView: View {
     private var theme: Theme { settings.theme.settings.date }
     private var colors: Theme.Colors { theme.colors }
     
-    private let dateFontRange: ClosedRange<CGFloat> = 14...50
+    private let dateFontRange: ClosedRange<CGFloat> = 14...48
+    
+    private func getFont(within width: CGFloat) -> Font {
+        let baseFont = width < 100
+            ? theme.dateTextForSmallFormat
+            : theme.dateText
+        return baseFont.getFont(within: width, limitedTo: dateFontRange)
+    }
     
     private func makeDateDisplay(within width: CGFloat) -> some View {
-        let font: Font = theme.dateText.getFont(within: width, limitedTo: dateFontRange)
-        return HStack {
+        HStack(alignment: .firstTextBaseline) {
             Spacer()
             TimeTextBlock(
                 text: time.dateString,
                 color: colors.dateText,
-                font: font
+                font: getFont(within: width)
             )
             Spacer()
         }
@@ -51,6 +57,11 @@ struct DateDisplayView: View {
     struct Theme {
         var colors: Colors = Colors()
         var dateText: ClockFont = FixedClockFont(.body)
+        var smallFormatDateText: ClockFont? = nil
+        
+        var dateTextForSmallFormat: ClockFont {
+            smallFormatDateText ?? dateText
+        }
         
         struct Colors {
             var dateText: Color = .primary
