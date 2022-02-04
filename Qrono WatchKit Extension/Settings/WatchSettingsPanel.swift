@@ -141,7 +141,7 @@ struct WatchSettingsPanel: View {
         }
         .padding(.horizontal, UIMeasurement(2).value)
         .navigationTitle(strings.settings)
-        .navigationBarTitleDisplayMode(.automatic)
+        .navigationBarTitleDisplayMode(.inline)
     }
     
     /// Common wrapper for toggles ---------------------- /

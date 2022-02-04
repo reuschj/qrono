@@ -30,10 +30,10 @@ struct DateDisplayView: View {
     private let dateFontRange: ClosedRange<CGFloat> = 14...48
     
     private func getFont(within width: CGFloat) -> Font {
-        let baseFont = width < 100
+        let baseFont = width < 250
             ? theme.dateTextForSmallFormat
             : theme.dateText
-        return baseFont.getFont(within: width, limitedTo: dateFontRange)
+        return baseFont.getFont(within: width, limitedTo: dateFontRange, modifier: nil)
     }
     
     private func makeDateDisplay(within width: CGFloat) -> some View {

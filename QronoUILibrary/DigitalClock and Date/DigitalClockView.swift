@@ -63,15 +63,15 @@ struct DigitalClockView: View {
     private let timeDigitFontRange: ClosedRange<CGFloat> = 8...50
     
     private func getTimeDigitFont(within container: CGFloat) -> Font {
-        theme.timeDigits.getFont(within: container, limitedTo: timeDigitFontRange)
+        theme.timeDigits.getFont(within: container, limitedTo: timeDigitFontRange, modifier: nil)
     }
     
     private func getSeparatorFont(within container: CGFloat) -> Font {
-        theme.timeSeparators.getFont(within: container, limitedTo: timeDigitFontRange)
+        theme.timeSeparators.getFont(within: container, limitedTo: timeDigitFontRange, modifier: nil)
     }
     
     private func getPeriodFont(within container: CGFloat) -> Font? {
-        theme.periodDigits?.getFont(within: container, limitedTo: timeDigitFontRange)
+        theme.periodDigits?.getFont(within: container, limitedTo: timeDigitFontRange, modifier: nil)
     }
     
     
@@ -124,7 +124,7 @@ struct DigitalClockView: View {
         var colors: Colors = Colors()
         var timeDigits: ClockFont = FixedClockFont(.title)
         var timeSeparators: ClockFont = FixedClockFont(.title)
-        var separatorWidth: UIMeasurement = UIMeasurement(2)
+        var separatorWidth: UIMeasurement? = nil
         var periodDigits: ClockFont? = nil
         var separatorCharacter: Character = ":"
         var separatorCharacterDecimal: Character = "."

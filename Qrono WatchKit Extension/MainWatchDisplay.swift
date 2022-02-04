@@ -43,7 +43,6 @@ struct MainWatchDisplay: View {
                 )
                 Spacer()
             }
-//            .padding(UIMeasurement(0.25).value)
 
             // Settings tab --------------------- /
             WatchSettingsPanel(
