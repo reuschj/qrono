@@ -11,18 +11,18 @@ import Combine
 struct ContentView: View {
 
     @ObservedObject var qrono: Qrono
-
+    
     var body: some View {
-        TabView {
-            AnalogClockView(
-                timeEmitter: qrono.timeEmitter,
-                settings: qrono.settings
-            ).padding(8)
-            DigitalClockView(
-                timeEmitter: qrono.timeEmitter,
-                settings: qrono.settings
-            ).padding(8)
-        }.ignoresSafeArea(edges: .all)
+        
+        NavigationView {
+            ZStack {
+                MainWatchDisplay(
+                    timeEmitter: Qrono.shared.timeEmitter,
+                    settings: Qrono.shared.settings
+                )
+            }
+        }
+        .environmentObject(qrono)
     }
 }
 

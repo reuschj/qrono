@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A43C75D127AB9E3E0009128E /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E82786B7E80062B4CD /* DigitalClockView.swift */; };
 		A46A38652785662E000D04C3 /* QronoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38642785662E000D04C3 /* QronoApp.swift */; };
 		A46A38672785662E000D04C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A38662785662E000D04C3 /* ContentView.swift */; };
 		A46A386C27856630000D04C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A386B27856630000D04C3 /* Preview Assets.xcassets */; };
@@ -30,6 +31,9 @@
 		A4B87E7B279A5D85002BBC29 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E7A279A5D85002BBC29 /* Media.xcassets */; };
 		A4B87E7C279A5D85002BBC29 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E7A279A5D85002BBC29 /* Media.xcassets */; };
 		A4BA0832279D17EF00F61B4F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B87E7A279A5D85002BBC29 /* Media.xcassets */; };
+		A4BA0834279E300700F61B4F /* MainWatchDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA0833279E300700F61B4F /* MainWatchDisplay.swift */; };
+		A4BA0838279E313700F61B4F /* WatchSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA0837279E313700F61B4F /* WatchSettingsPanel.swift */; };
+		A4BA083A279E314A00F61B4F /* WatchSettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA0839279E314A00F61B4F /* WatchSettingsLink.swift */; };
 		A4C1A12027880B0200BE1EA9 /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8F12786B7E80062B4CD /* AnalogClockView.swift */; };
 		A4C1A1222788128A00BE1EA9 /* TimeKeeper in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1212788128A00BE1EA9 /* TimeKeeper */; };
 		A4C1A1242788128A00BE1EA9 /* AppBackgroundView in Frameworks */ = {isa = PBXBuildFile; productRef = A4C1A1232788128A00BE1EA9 /* AppBackgroundView */; };
@@ -104,7 +108,6 @@
 		A4D2F8E12786B3FD0062B4CD /* Percent in Frameworks */ = {isa = PBXBuildFile; productRef = A4D2F8E02786B3FD0062B4CD /* Percent */; };
 		A4D2F8E42786B4110062B4CD /* RotatableStack in Frameworks */ = {isa = PBXBuildFile; productRef = A4D2F8E32786B4110062B4CD /* RotatableStack */; };
 		A4D2F8F62786B7E80062B4CD /* MainDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E62786B7E80062B4CD /* MainDisplay.swift */; };
-		A4D2F8F82786B7E80062B4CD /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E82786B7E80062B4CD /* DigitalClockView.swift */; };
 		A4D2F8F92786B7E80062B4CD /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E82786B7E80062B4CD /* DigitalClockView.swift */; };
 		A4D2F8FA2786B7E80062B4CD /* DateDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E92786B7E80062B4CD /* DateDisplayView.swift */; };
 		A4D2F8FB2786B7E80062B4CD /* DateDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2F8E92786B7E80062B4CD /* DateDisplayView.swift */; };
@@ -225,6 +228,9 @@
 		A4B87E772798845D002BBC29 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A4B87E7A279A5D85002BBC29 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A4B87E7E279A5F90002BBC29 /* AppIcon.afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppIcon.afdesign; sourceTree = "<group>"; };
+		A4BA0833279E300700F61B4F /* MainWatchDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWatchDisplay.swift; sourceTree = "<group>"; };
+		A4BA0837279E313700F61B4F /* WatchSettingsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSettingsPanel.swift; sourceTree = "<group>"; };
+		A4BA0839279E314A00F61B4F /* WatchSettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSettingsLink.swift; sourceTree = "<group>"; };
 		A4C1A12C27893C0F00BE1EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4C1A1312789663700BE1EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A4C1A13227896A8500BE1EA9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -372,6 +378,8 @@
 				A4C1A1312789663700BE1EA9 /* Info.plist */,
 				A46A38642785662E000D04C3 /* QronoApp.swift */,
 				A46A38662785662E000D04C3 /* ContentView.swift */,
+				A4D2F8E62786B7E80062B4CD /* MainDisplay.swift */,
+				A4D2F8F22786B7E80062B4CD /* Settings */,
 				A46A386A27856630000D04C3 /* Preview Content */,
 				A4B87E772798845D002BBC29 /* Media.xcassets */,
 			);
@@ -415,6 +423,8 @@
 			children = (
 				A46A389527856632000D04C3 /* QronoApp.swift */,
 				A46A389727856632000D04C3 /* ContentView.swift */,
+				A4BA0833279E300700F61B4F /* MainWatchDisplay.swift */,
+				A4BA0835279E302600F61B4F /* Settings */,
 				A46A389927856632000D04C3 /* NotificationController.swift */,
 				A46A389B27856632000D04C3 /* NotificationView.swift */,
 				A46A389D27856632000D04C3 /* ComplicationController.swift */,
@@ -457,6 +467,23 @@
 				A4B87E7E279A5F90002BBC29 /* AppIcon.afdesign */,
 			);
 			path = QronoDesign;
+			sourceTree = "<group>";
+		};
+		A4BA0835279E302600F61B4F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A4BA0837279E313700F61B4F /* WatchSettingsPanel.swift */,
+				A4BA0839279E314A00F61B4F /* WatchSettingsLink.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A4BA0836279E30BD00F61B4F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2F8F52786B7E80062B4CD /* SectionHeaderText.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		A4C1A11B2787ED2B00BE1EA9 /* Frameworks */ = {
@@ -597,8 +624,7 @@
 			children = (
 				A4D2F8EB2786B7E80062B4CD /* AnalogClock */,
 				A4D2F8E72786B7E80062B4CD /* DigitalClock and Date */,
-				A4D2F8E62786B7E80062B4CD /* MainDisplay.swift */,
-				A4D2F8F22786B7E80062B4CD /* Settings */,
+				A4BA0836279E30BD00F61B4F /* Settings */,
 				A4B87E7A279A5D85002BBC29 /* Media.xcassets */,
 			);
 			path = QronoUILibrary;
@@ -632,7 +658,6 @@
 			children = (
 				A4D2F8F32786B7E80062B4CD /* SettingsPanel.swift */,
 				A4D2F8F42786B7E80062B4CD /* SettingsLink.swift */,
-				A4D2F8F52786B7E80062B4CD /* SectionHeaderText.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -958,6 +983,7 @@
 				A4D2F9022786B7E80062B4CD /* TickTockDisplayView.swift in Sources */,
 				A4D2F86027868B280062B4CD /* limitToRange.swift in Sources */,
 				A4D2F9082786B7E80062B4CD /* AnalogClockView.swift in Sources */,
+				A43C75D127AB9E3E0009128E /* DigitalClockView.swift in Sources */,
 				A4D2F89F27868B460062B4CD /* strings.swift in Sources */,
 				A4D2F8F62786B7E80062B4CD /* MainDisplay.swift in Sources */,
 				A4D2F9062786B7E80062B4CD /* ClockNumbers.swift in Sources */,
@@ -978,7 +1004,6 @@
 				A4D2F8D32786A3300062B4CD /* Qrono.swift in Sources */,
 				A4D2F8FA2786B7E80062B4CD /* DateDisplayView.swift in Sources */,
 				A4D2F85227868B280062B4CD /* ClockType.swift in Sources */,
-				A4D2F8F82786B7E80062B4CD /* DigitalClockView.swift in Sources */,
 				A4D2F84C27868B280062B4CD /* TimeInterval.swift in Sources */,
 				A4D2F85C27868B280062B4CD /* defaultKeys.swift in Sources */,
 				A4D2F87227868B280062B4CD /* Utility.swift in Sources */,
@@ -1018,12 +1043,14 @@
 				A4D2F85B27868B280062B4CD /* QronoSettings.swift in Sources */,
 				A46A389A27856632000D04C3 /* NotificationController.swift in Sources */,
 				A4D2F9032786B7E80062B4CD /* TickTockDisplayView.swift in Sources */,
+				A4BA0834279E300700F61B4F /* MainWatchDisplay.swift in Sources */,
 				A4D2F85527868B280062B4CD /* ClockHandType.swift in Sources */,
 				A4D2F8FB2786B7E80062B4CD /* DateDisplayView.swift in Sources */,
 				A4D2F85D27868B280062B4CD /* defaultKeys.swift in Sources */,
 				A4D2F84D27868B280062B4CD /* TimeInterval.swift in Sources */,
 				A4D2F8FF2786B7E80062B4CD /* ClockHands.swift in Sources */,
 				A4D2F8A727868E130062B4CD /* strings.swift in Sources */,
+				A4BA0838279E313700F61B4F /* WatchSettingsPanel.swift in Sources */,
 				A4D2F86D27868B280062B4CD /* ClockElementColor.swift in Sources */,
 				A4D2F90F2786B7E80062B4CD /* SectionHeaderText.swift in Sources */,
 				A4D2F9072786B7E80062B4CD /* ClockNumbers.swift in Sources */,
@@ -1045,6 +1072,7 @@
 				A4D2F86127868B280062B4CD /* limitToRange.swift in Sources */,
 				A4D2F87527868B280062B4CD /* types.swift in Sources */,
 				A4D2F8F92786B7E80062B4CD /* DigitalClockView.swift in Sources */,
+				A4BA083A279E314A00F61B4F /* WatchSettingsLink.swift in Sources */,
 				A4D2F86527868B280062B4CD /* Font.swift in Sources */,
 				A4D2F85127868B280062B4CD /* ClockTimeEmitter.swift in Sources */,
 				A46A389C27856632000D04C3 /* NotificationView.swift in Sources */,
@@ -1705,7 +1733,7 @@
 			repositoryURL = "https://github.com/reuschj/RotatableStack";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

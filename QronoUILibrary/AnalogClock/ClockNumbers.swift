@@ -44,7 +44,15 @@ struct ClockNumbers: View {
     - Parameter clockDiameter: Diameter of the clock, obtained via geometry
     */
     private func getFont(within clockDiameter: CGFloat) -> Font {
-        clockFont.getFont(within: clockDiameter, limitedTo: fontRange)
+        clockFont.getFont(
+            within: clockDiameter,
+            limitedTo: fontRange,
+            modifier: {
+                type == .twentyFourHour &&  clockDiameter < 250
+                ? $0 * 0.65
+                : $0
+            }
+        )
     }
     
     /**

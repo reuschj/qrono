@@ -9,6 +9,7 @@
 import SwiftUI
 import Combine
 import TimeKeeper
+import Percent
 
 struct DigitalClockView: View {
     
@@ -59,38 +60,46 @@ struct DigitalClockView: View {
         }
     }
     
-    private let timeDigitFontRange: ClosedRange<CGFloat> = 14...50
+    private let timeDigitFontRange: ClosedRange<CGFloat> = 8...50
     
     private func getTimeDigitFont(within container: CGFloat) -> Font {
-        theme.timeDigits.getFont(within: container, limitedTo: timeDigitFontRange)
+        theme.timeDigits.getFont(within: container, limitedTo: timeDigitFontRange, modifier: nil)
     }
     
     private func getSeparatorFont(within container: CGFloat) -> Font {
-        theme.timeSeparators.getFont(within: container, limitedTo: timeDigitFontRange)
+        theme.timeSeparators.getFont(within: container, limitedTo: timeDigitFontRange, modifier: nil)
     }
     
     private func getPeriodFont(within container: CGFloat) -> Font? {
-        theme.periodDigits?.getFont(within: container, limitedTo: timeDigitFontRange)
+        theme.periodDigits?.getFont(within: container, limitedTo: timeDigitFontRange, modifier: nil)
     }
     
     
     private func makeDigitalDisplay(within width: CGFloat) -> some View {
         let timeDigitFont: Font = getTimeDigitFont(within: width)
         let periodFont: Font = getPeriodFont(within: width) ?? timeDigitFont
-        let separatorFont: Font = getTimeDigitFont(within: width)
+        let separatorFont: Font = getSeparatorFont(within: width)
         let _separator_ = DigitalClockSeparator(
+            width: theme.separatorWidth,
             color: colors.timeSeparators,
             font: separatorFont,
-            character: theme.separatorCharacter
+            character: type == .decimal ? theme.separatorCharacterDecimal : theme.separatorCharacter
         )
-        func digit(_ text: String?, font: Font = timeDigitFont) -> TimeTextBlock {
+        func digit(
+            _ text: String?,
+            font: Font = timeDigitFont,
+            color: Color = colors.timeDigits
+        ) -> TimeTextBlock {
             TimeTextBlock(
                 text: text,
-                color: colors.timeDigits,
+                color: color,
                 font: font
             )
         }
-        return HStack {
+        return HStack(
+            alignment: theme.verticalAlignment,
+            spacing: .zero
+        ) {
             Spacer()
             digit(hourTimeText)
             _separator_
@@ -98,8 +107,8 @@ struct DigitalClockView: View {
             _separator_
             digit(secondTimeText)
             if type == .twelveHour {
-                _separator_
-                digit(time.periodString, font: periodFont)
+                digit(time.periodString, font: periodFont, color: colors.period)
+                    .padding(.leading, 4)
             }
             Spacer()
         }
@@ -115,22 +124,30 @@ struct DigitalClockView: View {
         var colors: Colors = Colors()
         var timeDigits: ClockFont = FixedClockFont(.title)
         var timeSeparators: ClockFont = FixedClockFont(.title)
+        var separatorWidth: UIMeasurement? = nil
         var periodDigits: ClockFont? = nil
         var separatorCharacter: Character = ":"
+        var separatorCharacterDecimal: Character = "."
+        var verticalAlignment: VerticalAlignment = .firstTextBaseline
         
         struct Colors {
             var timeDigits: Color = .primary
             var timeSeparators: Color = .gray
+            var period: Color = .gray
         }
     }
 }
 
 struct DigitalClockView_Previews: PreviewProvider {
     static var previews: some View {
-        DigitalClockView(
-            timeEmitter: Qrono.shared.timeEmitter,
-            settings: Qrono.shared.settings
-        )
-            .padding()
+        Qrono.shared.settings.theme = .altTheme
+        return Group {
+            DigitalClockView(
+                timeEmitter: Qrono.shared.timeEmitter,
+                settings: Qrono.shared.settings
+            )
+                .preferredColorScheme(.dark)
+                .padding()
+        }
     }
 }

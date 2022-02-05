@@ -104,7 +104,7 @@ class QronoTheme: Hashable, Comparable {
                     pivot: ClockElementColor(fill: .accentColor)
                 ),
                 outlineWidth: 2,
-                numbers: FlexClockFont(scale: UIPercent(oneOver: 16, of: .container(.diameter, of: "clock"))),
+                numbers: FlexClockFont(scale: UIPercent(oneOver: 18, of: .container(.diameter, of: "clock"))),
                 hourHand: ClockHand.Hour.defaultDimensions,
                 minuteHand: ClockHand.Minute.defaultDimensions,
                 secondHand: ClockHand.Second.defaultDimensions,
@@ -119,9 +119,10 @@ class QronoTheme: Hashable, Comparable {
                     timeDigits: .primary,
                     timeSeparators: .secondary
                 ),
-                timeDigits: FixedClockFont(.title),
-                timeSeparators: FixedClockFont(.body),
-                periodDigits: nil,
+                timeDigits: FlexClockFont(scale: UIPercent(oneOver: 6, of: .container(.diameter, of: "clock"))),
+                timeSeparators: FlexClockFont(scale: UIPercent(oneOver: 8, of: .container(.diameter, of: "clock"))),
+                separatorWidth: UIMeasurement(3),
+                periodDigits: FlexClockFont(scale: UIPercent(oneOver: 16, of: .container(.diameter, of: "clock"))),
                 separatorCharacter: ":"
             ),
             date: DateDisplayView.Theme(
@@ -158,7 +159,7 @@ class QronoTheme: Hashable, Comparable {
                 outlineWidth: 2,
                 numbers: FlexClockFont(
                     name: CustomFonts.MajorMonoDisplay.regular,
-                    scale: UIPercent(oneOver: 12, of: .container(.diameter, of: "clock"))
+                    scale: UIPercent(oneOver: 13, of: .container(.diameter, of: "clock"))
                 ),
                 hourHand: ClockHand.Hour.getDefaultDimensions(outlineWidth: 2),
                 minuteHand: ClockHand.Minute.defaultDimensions,
@@ -179,15 +180,20 @@ class QronoTheme: Hashable, Comparable {
                 ),
                 timeDigits: FlexClockFont(
                     name: CustomFonts.MajorMonoDisplay.regular,
-                    scale: UIPercent(oneOver: 12, of: .screen(.width))
+                    scale: UIPercent(
+                        oneOver: 7, of: .screen(.width)
+                    )
                 ),
                 timeSeparators: FlexClockFont(
                     name: CustomFonts.MajorMonoDisplay.regular,
-                    scale: UIPercent(oneOver: 24, of: .screen(.width))
+                    scale: UIPercent(
+                        oneOver: 11, of: .screen(.width)
+                    )
                 ),
+                separatorWidth: nil,
                 periodDigits: FlexClockFont(
                     name: CustomFonts.Montserrat.light,
-                    scale: UIPercent(oneOver: 14, of: .screen(.width))
+                    scale: UIPercent(oneOver: 18, of: .screen(.width))
                 ),
                 separatorCharacter: ":"
             ),
@@ -197,9 +203,42 @@ class QronoTheme: Hashable, Comparable {
                 ),
                 dateText: FlexClockFont(
                     name: CustomFonts.Montserrat.regular,
-                    scale: UIPercent(oneOver: 14, of: .screen(.width))
+                    scale: UIPercent(oneOver: 10, of: .screen(.width))
+                ),
+                smallFormatDateText: FlexClockFont(
+                    name: CustomFonts.Montserrat.regular,
+                    scale: UIPercent(oneOver: 9, of: .screen(.width))
                 )
             )
         )
     )
+}
+
+struct Theme_Previews: PreviewProvider {
+    static var previews: some View {
+        Qrono.shared.settings.theme = .altTheme
+        Qrono.shared.settings.clockType = .twelveHour
+        return Group {
+            DigitalClockView(
+                timeEmitter: Qrono.shared.timeEmitter,
+                settings: Qrono.shared.settings
+            )
+            DigitalClockView(
+                timeEmitter: Qrono.shared.timeEmitter,
+                settings: Qrono.shared.settings
+            )
+            .padding(8)
+            .frame(
+                width: 396 / 2,
+                height: 484 / 2,
+                alignment: .center
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(.red, lineWidth: 1)
+            )
+        }
+        .preferredColorScheme(.dark)
+        .padding()
+    }
 }
